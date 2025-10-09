@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whinsdor Club - Elenco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="elenco.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/imagens/WhinsdorClubEscudo.png">
+</head>
+
+<body>
+
+
+    <a href="../docs/home.html">
+        <img src="../imagens/WhinsdorClubEscudo4.png" alt="Escudo do Clube" id="escudo">
+    </a>
+
+    <img src="../imagens/WhinsdorClubEscudo4.png" alt="Escudo do Fundo" id="escudofundo" />
+
+    <div class="barranavegacao">
+
+        <a href="#" onclick="goToPage(event, '../docs/home.html')">HOME</a>
+        <a href="#" onclick="goToPage(event, '../historia/historia.html')">HISTÓRIA</a>
+        <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">CONQUISTAS</a>
+
+        <a href="#" onclick="goToPage(event, '../paginaMidia/midia.html')"> MÍDIA </a>
+
+
+        <img src="../imagens/login-avatar2.png" id="fotoperfil">
+
+    </div>
+
+
+
+
+    <div class="div-elenco">
+        <h1 id="titulo-elenco">ELENCO</h1>
+        <h2 id="titulo-elenco2">PRINCIPAL</h2>
+    </div>
+    <h2 id="subtitulo-elenco">Conheça o elenco principal do Whinsdor Club</h2>
+
+
+
+</body>
+
+
+<section id="squad-container">
+    <div class="position-container">
+        <h2 class="position-title">Goleiros</h2>
+        <div class="goleiro-container">
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador1.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador1.png')" alt="Pedro Lima">
+                <h3>Pedro Lima</h3>
+                <p>Goleiro • Nº 39</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Pedro Lima nasceu em Recife, em uma comunidade humilde, e chamou atenção desde cedo pela inteligência tática. Foi descoberto aos 13 anos em um torneio em São Paulo e levado à base do Whinsdor Club. Teve dificuldades na adaptação, mas mostrou disciplina e personalidade. Evoluiu rápido, se firmou como goleiro e virou capitão do sub-18. Fez parte de campanhas vitoriosas na base e se destacou como líder silencioso.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+
+            </div>
+
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador2.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador2.png')" alt="Pedro Lima">
+                <h3>Julien Laporte</h3>
+                <p>Goleiro • Nº 1</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Julien Laporte nasceu em Lyon e chegou ao Whinsdor ainda jovem, vindo da base do Lyon. Dono de reflexos apurados e grande personalidade, logo se firmou como titular no sub-21. Foi promovido ao time principal aos 19 anos e rapidamente ganhou espaço com atuações seguras. Teve papel decisivo em campanhas da Premier League e Champions League. Ídolo da torcida, se despediu do clube ao ser vendido ao Chelsea, deixando um legado de grandes defesas e profissionalismo. E só então, retornando posteriormente.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador3.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador3.png')" alt="Sam Kerr">
+                <h3>Michael Kerr</h3>
+                <p>Goleiro • Nº 12</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Michael Kerr é um goleiro norte-americano que chegou ao Whinsdor aos 18 anos, vindo de uma academia de elite dos EUA. Com 1,92m de altura e excelente alcance, se destacou pela frieza sob pressão e jogo com os pés. Evoluiu rapidamente na base e estreou no time principal aos 20 anos. Ao longo dos anos, se tornou um reserva confiável e participou de rodízios em copas e jogos da liga. Aos 23, é visto como um sucessor natural no gol e segue em ascensão dentro do elenco.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2 class="position-title">Defensores</h2>
+        <div class="defesa-container">
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador4.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador4.png')" alt="Emílio Cabrera">
+                <h3>Emílio Cabrera</h3>
+                <p>Lateral-direito • Nº 39</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Emilio Cabrera nasceu em Sevilha e iniciou sua carreira no Real Betis, onde se destacou pela técnica e apoio ofensivo. Após ganhar experiência em clubes da segunda divisão espanhola, se firmou na elite com o Granada. Suas boas atuações chamaram atenção do Whinsdor, que buscava um lateral experiente ao chegar na Premier League. Cabrera chegou pronto, assumiu a titularidade e deu nova dinâmica ao setor com sua força ofensiva. Teve impacto imediato, ajudando a corrigir uma fragilidade da equipe. Apesar da curta passagem, foi importante na fase de transição do clube para o alto nível.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador5.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador5.png')" alt="David Heath">
+                <h3>David Heath</h3>
+                <p>Lateral-direito • Nº 2</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('David Heath é um lateral inglês revelado pela base do Southampton, conhecido por sua solidez defensiva e consistência tática. Sempre discreto, mas muito eficiente, se destacou na Championship até chamar atenção do Whinsdor. Foi contratado inicialmente para compor elenco, mas rapidamente surpreendeu a comissão técnica com sua maturidade e leitura de jogo. Ganhou a titularidade com atuações seguras e equilibradas, oferecendo uma estabilidade que faltava na posição. Com boa marcação e inteligência nas coberturas, se firmou como peça confiável no setor defensivo. Hoje, é referência silenciosa na linha de defesa do time.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador6.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador6.png')" alt="Renato Moraes">
+                <h3>Renato Moraes</h3>
+                <p>Zagueiro • Nº 5</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Renato Moraes é um zagueiro brasileiro revelado pelo Fluminense, conhecido desde jovem por sua liderança em campo e personalidade firme. Chegou ao Whinsdor ainda com 19 anos, como uma aposta de futuro, mas rapidamente conquistou espaço. Com versatilidade para atuar também como volante, se destacou pela força física, leitura defensiva e postura de capitão. Foi ganhando respeito no vestiário e, com o tempo, herdou a braçadeira. Dentro e fora de campo, se tornou uma referência de caráter, entrega e voz ativa. É o símbolo da identidade do clube — firme na defesa e líder nato.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador7.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador7.png')" alt="Sebastian Buckley">
+                <h3>Sebastian Buckley</h3>
+                <p>Zagueiro • Nº 28</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Sebastian Buckley é um zagueiro inglês formado na base do Whinsdor, conhecido desde cedo por sua postura séria e capacidade de liderança. Alto, firme na marcação e com boa saída de bola, sempre foi destaque nas categorias inferiores do clube. Subiu ao time principal com expectativa de se tornar referência defensiva, e correspondeu com atuações seguras e consistentes. Apesar da juventude, mostrou maturidade e leitura de jogo acima da média. Com o tempo, se firmou como uma opção confiável na zaga, sendo símbolo da força da base do clube. É visto como um herdeiro natural da linhagem de líderes defensivos do Whinsdor.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador8.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador8.png')" alt="Sebastian Buckley">
+                <h3>Peter Foster</h3>
+                <p>Zagueiro • Nº 3</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Peter Foster é um zagueiro inglês revelado pela base do Whinsdor, considerado uma das maiores promessas defensivas do clube. Com excelente tempo de bola, imposição física e personalidade forte, subiu cedo ao time principal e rapidamente se destacou. Ganhou espaço em jogos importantes e foi tratado como um futuro pilar da defesa. No entanto, sua trajetória foi marcada por uma virada inesperada: às vésperas do fim de uma temporada histórica, forçou sua saída para o Arsenal. Mesmo com a decepção deixada pela maneira como saiu, Foster teve um impacto significativo no início de sua carreira no clube, representando o potencial e a força da base whinsdoriana. ')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador9.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador9.png')" alt="Fábio Moraes">
+                <h3>Fábio Moraes</h3>
+                <p>Zagueiro • Nº 4</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Fábio Moraes é um zagueiro brasileiro de 1,96m revelado pelo Cruzeiro, com passagem destacada pela seleção sub-20. Forte fisicamente, dominante pelo alto e com bom senso de posicionamento, foi contratado pelo Whinsdor para reforçar a defesa em alto nível. Chegou com perfil de titular e rapidamente assumiu a posição, desbancando nomes consolidados com atuações firmes e regulares. Sua presença impôs mais segurança ao sistema defensivo, especialmente em jogos grandes. Apesar da pouca idade, mostrou maturidade e liderança silenciosa. Fábio se consolidou como peça-chave na defesa e é visto como um dos pilares do futuro do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador10.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador10.png')" alt="Archie Bryan">
+                <h3>Archie Bryan</h3>
+                <p>Zagueiro • Nº 24</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Archie Bryan é um zagueiro inglês formado na base do Whinsdor, reconhecido desde cedo pela frieza, disciplina tática e qualidade na saída de bola. Sempre se destacou nas categorias inferiores por sua leitura de jogo e personalidade tranquila, assumindo papel de liderança mesmo jovem. Foi promovido ao elenco principal como parte do processo de renovação defensiva do clube. Ganhou minutos com inteligência e consistência, mostrando que podia competir em alto nível. Com seu estilo calmo e eficiente, passou a ser visto como um dos defensores mais promissores do elenco. Archie representa a solidez e a confiança do trabalho feito na base whinsdoriana.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador11.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador11.png')" alt="Leon Fisher">
+                <h3>Leon Fisher</h3>
+                <p>Zagueiro • Nº 46</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Leon Fisher é um zagueiro inglês revelado pela base do Whinsdor, conhecido por sua força física, agressividade na marcação e espírito competitivo. Desde as categorias de base, se destacou por sua postura intensa e liderança natural dentro de campo. Subiu ao time principal como uma promessa defensiva e logo começou a ganhar oportunidades em jogos de copas e na rotação do elenco. Com o tempo, foi evoluindo tecnicamente e se tornou uma presença confiável na defesa. Sua capacidade de duelar e sua mentalidade combativa o tornaram um nome valioso no grupo. Fisher é mais um produto sólido da linha defensiva formada no Whinsdor.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador12.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador12.png')" alt="Thomas Delaney">
+                <h3>Thomas Delaney</h3>
+                <p>Lateral-esquerdo • Nº 27</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Tom Delaney é um lateral-esquerdo irlandês revelado pela base do Whinsdor, conhecido por sua solidez defensiva e comprometimento tático. Sempre discreto, mas extremamente eficiente, chamou atenção pela maturidade com que enfrentava duelos mesmo nas categorias de base. Subiu ao time principal ainda jovem e, em pouco tempo, ganhou a titularidade, desbancando nomes mais experientes. Sua consistência na marcação e inteligência nas coberturas deram mais equilíbrio ao setor. Embora não seja tão ofensivo, compensou com regularidade e segurança. Delaney se firmou como peça confiável e virou um dos pilares silenciosos da linha defensiva.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador13.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador13.png')" alt="Thomas Delaney">
+                <h3>Bruno Teixeira</h3>
+                <p>Lateral-esquerdo • Nº 25</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Bruno Teixeira é um lateral-esquerdo brasileiro de 23 anos, revelado pelo São Paulo, conhecido por sua explosão física, disciplina defensiva e apoio qualificado ao ataque. Chegou ao Whinsdor como uma aposta promissora e logo chamou atenção pela maturidade e consistência nas duas fases do jogo. Com bom senso de posicionamento e intensidade nos duelos, foi ganhando espaço na rotação. Mostrou segurança em jogos grandes e cresceu com a sequência de partidas. Bruno alia energia e foco tático, sendo hoje uma peça confiável no elenco. É visto como parte importante da nova geração que sustenta a competitividade do time.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2 class="position-title">Meio-campistas</h2>
+        <div class="meio-container">
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador14.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador14.png')" alt="Thomas Delaney">
+                <h3>Niclas König</h3>
+                <p>Volante • Nº 96</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Niclas König é um Volante alemão revelado pelo Hoffenheim, conhecido por sua imposição física, liderança natural e qualidade na saída de bola. Chamou atenção nas seleções de base da Alemanha e rapidamente se tornou um nome promissor no cenário europeu. Foi contratado pelo Whinsdor buscando dar mais profundidade e presença defensiva ao elenco. Com estilo firme e postura madura, se adaptou bem ao ritmo da Premier League. Ganhou minutos importantes na rotação e mostrou segurança sempre que acionado. König alia força e técnica, e é visto como uma peça valiosa para o presente e o futuro do sistema defensivo do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador16.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador16.png')" alt="Babacar Sow">
+                <h3>Babacar Sow</h3>
+                <p>Volante • Nº 43</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Babacar Sow é um volante senegalês revelado pela base do Whinsdor, conhecido por sua força física, imposição nos duelos e energia constante no meio-campo. Desde jovem, se destacou nas categorias inferiores pela intensidade, capacidade de recuperação e presença dominante na marcação. Foi promovido ao time principal como uma peça de força e equilíbrio no setor defensivo. Com boa leitura de jogo e comprometimento tático, passou a ser utilizado na rotação com segurança. Apesar da juventude, mostra maturidade e entrega em campo. É considerado uma das promessas mais físicas e combativas da base do Whinsdor.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador17.png"
+                    onclick="showModal('../elenco/elencoimagens/jogador17.png','texto')" alt="Adam Manning">
+                <h3>Adam Manning</h3>
+                <p>Volante • Nº 7</p>
+                <div class="info">
+                    <p class="bio-btn" onclick="showModal('/elenco/elencoimagens/jogador17.png','texto')">BIO</p>
+                    <p class="stats-btn" onclick="showModal('/elenco/elencoimagens/jogador17.png','texto')">STATS
+                    </p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador18.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador18.png')" alt="Caleb Lucas">
+                <h3>Caleb Lucas</h3>
+                <p>Volante • Nº 13</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Caleb Lucas é um volante inglês que surgiu no futebol alemão, se desenvolvendo nas categorias de base do Borussia Mönchengladbach. Com boa leitura de jogo, intensidade na marcação e passes seguros, se destacou como um jogador confiável no meio-campo. Foi contratado pelo Whinsdor para ser uma opção sólida na rotação, oferecendo equilíbrio e consistência quando acionado. Mesmo sem tanto brilho, conquistou a confiança da comissão técnica pela entrega tática e precisão nos desarmes. Caleb entende seu papel dentro do grupo e executa com disciplina. É o típico jogador silencioso, mas essencial para manter o alto nível do elenco.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador19.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador19.png')" alt="Ludwig Ziegler">
+                <h3>Ludwig Ziegler</h3>
+                <p>Meia-central • Nº 30</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Ludwig Ziegler é um meio-campista alemão revelado pelo Stuttgart, conhecido por sua elegância com a bola, inteligência tática e capacidade de controlar o ritmo do jogo. Chegou ao Whinsdor como uma aposta promissora para o meio-campo e rapidamente impressionou com sua maturidade e visão refinada. Com bom passe vertical e leitura defensiva, se encaixou bem no modelo de jogo da equipe. Durante sua evolução, sofreu uma lesão que interrompeu sua sequência, mas voltou com personalidade. Ziegler é visto como um meio-campista moderno, técnico e equilibrado, com potencial para se tornar protagonista no coração da equipe.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador20.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador20.png')" alt="Euan Kennedy">
+                <h3>Euan Kennedy</h3>
+                <p>Meia-central • Nº 38</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Euan Kennedy é um volante escocês revelado pela base do Whinsdor, reconhecido por sua agressividade na marcação, liderança natural e entrega constante em campo. Desde as categorias inferiores, se destacou pela intensidade e pelo espírito competitivo, sendo peça fundamental em times campeões da base. Subiu ao elenco principal como uma opção energética para o meio-campo e logo mostrou que podia competir em alto nível. Com bom senso de posicionamento e vontade em cada dividida, Kennedy se tornou uma presença importante na rotação. Representa bem a identidade do clube: trabalho, comprometimento e atitude.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador21.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador21.png')" alt="Alex Teixeira">
+                <h3>Alex Teixeira</h3>
+                <p>Meia-central • Nº 6</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Alex Teixeira é um meio-campista brasileiro revelado pela base do Whinsdor, conhecido por sua técnica refinada, controle de bola e inteligência nas construções ofensivas. Desde as categorias de base, se destacou pela visão de jogo e pela calma com que ditava o ritmo das partidas. Subiu ao elenco principal ainda jovem e, mesmo com forte concorrência, conquistou seu espaço com atuações maduras e eficientes. Com boa movimentação e precisão nos passes, contribui tanto na saída de bola quanto no último terço. Alex é visto como um dos talentos mais promissores formados pelo clube, com potencial para liderar o meio-campo no futuro.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador22.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador22.png')" alt="Patrick Hogg">
+                <h3>Patrick Hogg</h3>
+                <p>Meia-central • Nº 8</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Patrick Hogg é um meio-campista inglês formado na base do Whinsdor, reconhecido por sua versatilidade, intensidade e mentalidade vencedora. Sempre foi destaque nas categorias de base por sua capacidade de jogar em várias funções no meio-campo, combinando entrega defensiva com presença no ataque. Subiu ao elenco principal e rapidamente se firmou como peça importante, ganhando a confiança da comissão técnica com atuações consistentes. Hogg é o típico jogador que aparece em todas as partes do campo, mantendo o time equilibrado. Com personalidade forte e leitura de jogo, se tornou um nome constante nas grandes campanhas do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador23.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador23.png')" alt="Edson Gomes">
+                <h3>Edson Gomes</h3>
+                <p>Meia-atacante • Nº 39</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Edson Gomes é um meia-atacante brasileiro que ganhou destaque após uma temporada brilhante pelo Vitória da Bahia, onde chamou atenção pela criatividade, drible curto e poder de decisão no último terço. Contratado pelo Whinsdor, foi inicialmente integrado ao time sub-20, onde rapidamente se destacou com gols e assistências. Sua performance consistente o levou à promoção ao elenco profissional. Atuando pelas pontas ou centralizado, Edson se firmou como um reserva de luxo, sempre pronto para mudar o jogo quando chamado. Com personalidade e talento, é uma peça valiosa no setor ofensivo e tem potencial para crescer ainda mais dentro do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador24.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador24.png')" alt="Daniel Foster">
+                <h3>Daniel Foster</h3>
+                <p>Meia-atacante • Nº 10</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Daniel Foster é um meia-atacante inglês revelado pelo Whinsdor, considerado um dos talentos mais especiais formados pelo clube. Combinando visão de jogo, precisão nos passes e grande capacidade de finalização, se destacou desde cedo nas categorias de base. Subiu ao profissional com enorme expectativa e não decepcionou. Após uma passagem pelo Borussia Dortmund, retornou ao Whinsdor mais maduro e se tornou o cérebro do setor ofensivo. Com a camisa 10, comanda as ações no último terço com classe e personalidade. Foster é referência técnica e emocional, sendo um dos principais nomes da geração dourada do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador25.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador25.png')" alt="Zian Huang">
+                <h3>Zian Huang</h3>
+                <p>Meia-atacante • Nº 20</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Zian Huang é um meia chinês de grande talento, revelado nas categorias de base do Beijing Guoan, onde se destacou pela visão de jogo, mobilidade e criatividade no meio-campo. Suas atuações chamaram atenção internacional, e o Whinsdor apostou em seu potencial ao contratá-lo ainda jovem. Inicialmente integrado ao sub-20, rapidamente mostrou qualidade técnica e inteligência tática acima da média. Subiu ao elenco principal como uma opção promissora e passou a ganhar minutos com regularidade. Com estilo elegante e toques refinados, Huang é visto como uma aposta estratégica do clube para o futuro. Seu talento e evolução seguem em ritmo acelerado.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2 class="position-title">Atacantes</h2>
+        <div class="atacante-container">
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador29.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador29.png')" alt="Austin Dickson">
+                <h3>Austin Dixon</h3>
+                <p>Segundo-atacante • Nº 9</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Russel Kelly é um segundo-atacante norte-americano nascido no estado do Maine, conhecido por sua mobilidade, visão de jogo e capacidade de infiltrar entre as linhas. Chegou ao Whinsdor ainda jovem, após se destacar em competições de base nos Estados Unidos. Com inteligência tática e boa leitura de espaços, foi rapidamente integrado ao sistema ofensivo do clube. Atua como elo entre o meio-campo e o ataque, contribuindo com assistências, movimentações inteligentes e presença na área. Sua versatilidade permite atuar tanto centralizado quanto aberto, sempre com eficiência. Kelly é uma das apostas internacionais do Whinsdor e segue em plena evolução.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador27.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador27.png')" alt="Harley Oakley">
+                <h3>Harley Oakley</h3>
+                <p>Ponta-direita • Nº 31</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Harley Oakley é um ponta-direita inglês revelado pela base do Whinsdor, conhecido por sua velocidade, drible em velocidade e entrega dentro de campo. Desde cedo se destacou nas categorias inferiores pelo estilo agressivo, buscando constantemente o um contra um e atacando a linha de fundo. Subiu ao time principal como uma aposta ofensiva e passou a ganhar espaço em jogos de rotação e copas. Com movimentação intensa e disposição tática, é uma peça importante para abrir defesas e mudar o ritmo do jogo. Oakley representa a ousadia da base do Whinsdor, com potencial para crescer e se firmar entre os principais nomes do setor ofensivo.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador28.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador28.png')" alt="Leonardo García">
+                <h3>Leonardo García</h3>
+                <p>Segundo-atacante • Nº 11</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Leonardo García é um atacante brasileiro letal, conhecido por sua frieza na frente do gol, movimentação inteligente e faro artilheiro. Chegou ao Whinsdor ainda jovem e rapidamente se transformou em uma estrela, quebrando recordes de gols na Premier League e se tornando referência ofensiva do time. Com finalização precisa, leitura de espaços e participação ativa na construção, lidera o ataque com autoridade. Foi eleito o melhor jogador do mundo após temporadas dominantes em alto nível. Sua parceria com outros jovens talentos elevou o patamar ofensivo do clube. García é hoje o símbolo da era vitoriosa do Whinsdor e um dos grandes nomes do futebol mundial.Harley Oakley é um ponta-direita inglês revelado pela base do Whinsdor, conhecido por sua velocidade, drible em velocidade e entrega dentro de campo. Desde cedo se destacou nas categorias inferiores pelo estilo agressivo, buscando constantemente o um contra um e atacando a linha de fundo. Subiu ao time principal como uma aposta ofensiva e passou a ganhar espaço em jogos de rotação e copas. Com movimentação intensa e disposição tática, é uma peça importante para abrir defesas e mudar o ritmo do jogo. Oakley representa a ousadia da base do Whinsdor, com potencial para crescer e se firmar entre os principais nomes do setor ofensivo.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador26.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador26.png')" alt="Kirk MacPherson">
+                <h3>Kirk MacPherson</h3>
+                <p>Centroavante • Nº 29</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Kirk MacPherson é um jogador escocês revelado pela base do Whinsdor, que iniciou sua trajetória como volante. Forte fisicamente e com bom jogo aéreo, chamou atenção pelas características pouco comuns para a posição. Sob orientação de Renato Moraes, foi reposicionado como centroavante e rapidamente se adaptou ao novo papel. Com 1,88m, passou a usar sua presença física como pivô, se tornando uma referência ofensiva. Letal nas bolas aéreas e com instinto de finalizador, MacPherson evoluiu como um matador clássico. Sua transição surpreendente o transformou em uma arma valiosa no ataque do Whinsdor, com potencial para se firmar como referência no setor.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador30.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador30.png')" alt="Edson dos Santos">
+                <h3>Edson dos Santos</h3>
+                <p>Centroavante • Nº 19</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Edson Santos é um centroavante brasileiro de presença física marcante, com 1,87m de altura e características clássicas de um camisa 9. Revelado em solo nacional e contratado pelo Whinsdor, chegou com o perfil de jogador de área, forte no pivô, exímio finalizador e especialmente perigoso no jogo aéreo. Assim como Kirk MacPherson, atua como referência ofensiva, brigando com zagueiros, segurando bolas e aparecendo na hora certa para definir. Sua força física e presença constante na área adversária o tornaram uma alternativa valiosa no elenco. Edson é um matador clássico, pronto para aproveitar cada chance e ser decisivo em momentos-chave.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador31.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador31.png')" alt="Daniel Evans">
+                <h3>Daniel Evans</h3>
+                <p>Centroavante • Nº 17</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Daniel Evans é um atacante inglês que se destacou pelo Brighton com seu estilo explosivo, combinando velocidade, força e inteligência de movimentação. Mesmo sem ser tão alto, tem ótima presença de área e senso de posicionamento, lembrando o perfil de Ibrahim Weaver. Chegou ao Whinsdor para dar profundidade ao setor ofensivo e rapidamente mostrou seu valor com arrancadas, desmarques e gols decisivos. Pode atuar centralizado ou caindo pelos lados, sempre buscando atacar o espaço e quebrar linhas. Sua intensidade e poder de finalização o tornaram uma peça valiosa na rotação ofensiva. Evans representa bem o atacante moderno: móvel, físico e letal.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador32.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador32.png')" alt="Benjamin Watt">
+                <h3>Benjamin Watt</h3>
+                <p>Ponta-esquerda • Nº 7</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Ben Watt é um ponta-esquerda escocês revelado pela base do Whinsdor, conhecido por sua habilidade no um contra um, aceleração e personalidade ofensiva. Após se destacar no clube, foi negociado com o Real Madrid ainda jovem, onde passou um período de desenvolvimento. Retornou ao Whinsdor mais maduro e com impacto imediato, assumindo protagonismo na ponta com gols e assistências. Combinando velocidade, drible e finalização, se tornou peça fundamental no ataque. Sua sintonia com Leonardo García e Darren Cassey formou um trio ofensivo temido. Ben é hoje um dos nomes mais influentes da geração atual e símbolo da força da base do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <img src="../elenco/elencoimagens/jogador33.png"
+                    onclick="abrirZoom('../elenco/elencoimagens/jogador33.png')" alt="Alex Cruz">
+                <h3>Alex Cruz</h3>
+                <p>Ponta-esquerda • Nº 77</p>
+                <div class="info">
+                    <p class="bio-btn"
+                        onclick="abrirBio('Alex Cruz é um ponta-esquerda brasileiro revelado pelo Athletico Paranaense, conhecido por sua velocidade explosiva, drible afiado e personalidade ofensiva. Destacou-se ainda jovem no cenário nacional e foi contratado pelo Whinsdor como uma aposta de alto potencial. Inicialmente integrado ao sub-20, rapidamente se impôs com atuações decisivas, chamando atenção pela facilidade em partir pra cima dos marcadores. Subiu ao time principal como uma alternativa de impacto no ataque. Pela esquerda, leva constante perigo com suas arrancadas e cruzamentos. Alex é visto como um talento empolgante, com tudo para se firmar entre os grandes nomes do clube.')">
+                        BIO</p>
+                    <p class="stats-btn" onclick="abrirStats('Jogos: 45 | Gols sofridos: 28 | Defesas difíceis: 93')">
+                        STATS</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal com Flip -->
+<div id="zoomModal" class="zoom-modal">
+    <div class="zoom-modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div class="flip-wrapper">
+            <div class="flip-inner" id="modalFlipCard">
+                <div class="flip-front">
+                    <img id="zoomImg" src="" alt="" onclick="flipModalCard()" />
+                </div>
+
+                <div class="flip-back" id="zoomBackContent">
+                    <!-- Conteúdo gerado via JS -->
+                </div>
+            </div>
+        </div>
+        <!-- <button class="close-btn" onclick="closeModal()">Fechar</button> -->
+    </div>
+
+</div>
+
+
+<!-- Modal de BIO -->
+<div id="bioModal" class="zoom-modal">
+    <div id="bio-modal-content" class="zoom-modal-content">
+        <!-- <span class="close" onclick="fecharBio()">&times;</span> -->
+        <p id="bioText"></p>
+
+        <!-- <button class="close-btn" onclick="fecharBio()">Fechar</button> -->
+    </div>
+
+</div>
+
+<!-- Modal de STATS -->
+<div id="statsModal" class="zoom-modal">
+    <div id="stats-modal-content" class="zoom-modal-content">
+        <!-- <span class="close" onclick="fecharStats()">&times;</span> -->
+        <p id="statsText"></p>
+        <!-- <button class="close-btn" onclick="fecharStats()">Fechar</button> -->
+    </div>
+</div>
+
+
+
+
+
+<!-- Container da transição -->
+<div id="word-transition">
+    <span id="transition-word"></span>
+</div>
+
+
+
+
+
+
+<!-- Intro inicial -->
+
+<div id="intro-animation" class="intro">
+    <div class="club-name">
+        <span>W</span><span>H</span><span>I</span><span>N</span><span>S</span><span>D</span><span>O</span><span>R</span>
+        <div class="club-subname">
+            <span>C</span><span>L</span><span>U</span><span>B</span>
+        </div>
+    </div>
+    <div class="logo-container">
+        <img src="/imagens/WhinsdorClubEscudo5.png" alt="Escudo do Clube">
+    </div>
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/elenco/elenco.js"></script>
+</body>
+
+</html>
+
+
+</br></br>

@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0.25vw;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  animation: trocaCor 10s linear infinite;
+  background-position: center;
+  overflow-y: hidden;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+  text-align: justify;
+}
+
+/* Animação de fundo */
+@keyframes trocaCor {
+  0% {
+    background-color: #0b1d52;
+  }
+
+  15% {
+    background-color: rgb(10, 10, 70);
+  }
+
+  30% {
+    background-color: #0b1d52;
+  }
+
+  45% {
+    background-color: #040b30;
+  }
+
+  60% {
+    background-color: #0b1d52;
+  }
+
+  75% {
+    background-color: rgb(13, 13, 81);
+  }
+
+  100% {
+    background-color: #0b1d52;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(204, 173, 0);
+  font-weight: 400;
+}
+
+a:hover {
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+/* Escudo fixo no topo */
+#escudo {
+  position: fixed;
+  justify-content: flex-start;
+  transition: 1.3s;
+  top: -25px;
+  left: 6px;
+  width: 10.2vw;
+  max-width: 1000px;
+  z-index: 1000;
+}
+
+#escudo:hover {
+  position: fixed;
+  justify-content: flex-start;
+  transition: 1.3s;
+  top: -25px;
+  left: 6px;
+  width: 11vw;
+  max-width: 1000px;
+  z-index: 1000;
+}
+
+/* Fundo do escudo */
+#escudofundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.05;
+  object-fit: cover;
+}
+
+/* Foto de perfil no topo direito */
+
+#fotoperfil {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Título central */
+#titulo-home {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 12vw;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+/* Subtítulo central */
+#subtitulo-home {
+  color: rgb(204, 173, 0);
+  font-family: "Dancing Script", cursive;
+  font-size: 4.5vw;
+  text-align: center;
+  justify-content: center;
+  margin-top: -5vh;
+}
+
+/* Navegação horizontal no topo */
+.barranavegacao {
+  display: flex;
+  justify-content: flex-end;
+  /* tudo vai para a direita */
+  align-items: center;
+  gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 40px;
+  animation: trocaCor 10s linear infinite;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  word-spacing: 25px;
+  transition: all 1.3s ease;
+  letter-spacing: 1px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.barranavegacao:hover {
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 20px;
+  font-weight: bold !important;
+  transition: 1.3s;
+  opacity: 0.8;
+  transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rodapé fixo */
+.faixa-final {
+  width: 100%;
+  background-color: rgb(7, 7, 46);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas menores que 1024px */
+@media (max-width: 1024px) {
+  #titulo-home {
+    font-size: 14vw;
+    margin-top: 30vh;
+  }
+
+  #subtitulo-home {
+    font-size: 6vw;
+  }
+
+  .barranavegacao {
+    font-size: 2.5vw;
+    gap: 30px;
+  }
+  body {
+    overflow: hidden;
+  }
+}
+
+/* Telas menores que 768px (tablets/celulares grandes) */
+@media (max-width: 768px) {
+  #titulo-home {
+    font-size: 17vw;
+    margin-top: 32vh;
+  }
+
+  #subtitulo-home {
+    font-size: 6.5vw;
+  }
+
+  .barranavegacao {
+    flex-direction: column;
+    font-size: 4vw;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  #escudo {
+    width: 12vw;
+  }
+
+  #fotoperfil {
+    width: 35px;
+  }
+}
+body {
+  overflow: hidden;
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  #titulo-home {
+    font-size: 12vw;
+    margin-top: 35vh;
+  }
+
+  #subtitulo-home {
+    font-size: 7.5vw;
+  }
+
+  .barranavegacao {
+    font-size: 5vw;
+  }
+
+  .faixa-final {
+    font-size: 12px;
+  }
+
+  #escudo {
+    width: 15vw;
+  }
+
+  #fotoperfil {
+    width: 30px;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
+/* ===== Intro inicial ===== */
+.intro {
+  position: fixed;
+  inset: 0;
+  background: #ffd700; /* fundo amarelo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease 5s forwards; /* some após 5s */
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+/* Nome do clube (voando letra por letra) */
+.intro .club-name {
+  display: flex;
+  gap: 8px; /* espaçamento entre letras */
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000; /* letras pretas */
+  animation: fadeTextOut 0.8s ease 2.8s forwards; /* desaparece */
+}
+
+.intro .club-name span {
+  opacity: 0;
+  transform: translateY(60px) scale(0.8);
+  animation: flyIn 0.6s ease forwards;
+}
+
+.intro .club-name span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.intro .club-name span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.intro .club-name span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.intro .club-name span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.intro .club-name span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.intro .club-name span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.intro .club-name span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.intro .club-name span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.intro .club-name span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.intro .club-name span:nth-child(10) {
+  animation-delay: 1s;
+}
+.intro .club-name span:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.intro .club-name span:nth-child(12) {
+  animation-delay: 1.2s;
+}
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Desaparecer o texto */
+@keyframes fadeTextOut {
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.club-subname {
+  transform: translateY(60px) scale(0.8);
+  animation: flyIn 0.6s ease forwards;
+  font-weight: 450;
+}
+
+/* Escudo aparece no lugar do texto */
+.intro .logo-container {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.6);
+  animation: logoReveal 1.2s ease forwards;
+  animation-delay: 3s;
+}
+
+.intro .logo-container img {
+  width: 200px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes logoReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+/* Fade final */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ===== Transição entre páginas ===== */
+
+/* ===== Transição de palavra ===== */
+#word-transition {
+  position: fixed;
+  inset: 0;
+  background: #0b1d52; /* azul escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#word-transition.active {
+  opacity: 1;
+  visibility: visible;
+}
+#transition-word {
+  display: flex;
+  gap: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(204, 173, 0);
+}
+
+/* Reuso da animação da intro */
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1.2);
+  }
+}
+
+/* Animação do zoom */
+@keyframes zoomWord {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+#word-transition.active #transition-word {
+  animation: zoomWord 5.2s ease forwards;
+}

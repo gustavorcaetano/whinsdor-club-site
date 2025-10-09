@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whinsdor Club - Conquistas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="conquistas.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/imagens/WhinsdorClubEscudo.png">
+</head>
+
+<body>
+
+
+
+
+
+    <div class="barranavegacao">
+
+        <a href="../docs/home.html">
+            <img src="../imagens/WhinsdorClubEscudo5.png" alt="Escudo do Clube" id="escudo">
+        </a>
+
+        <div class="links-navegacao">
+            <a href="#" onclick="goToPage(event, '../docs/home.html')">HOME</a>
+            <a href="#" onclick="goToPage(event, '../historia/historia.html')">HISTÓRIA</a>
+            <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">ELENCO</a>
+
+            <a href="#" onclick="goToPage(event, '../paginaMidia/midia.html')"> MÍDIA </a>
+
+            <img src="../imagens/login-avatar.png" id="fotoperfil">
+        </div>
+    </div>
+
+    <div class="div-conquistas">
+        <h1 id="titulo-conquistas">CONQUISTAS</h1>
+
+    </div>
+    <h2 id="subtitulo-conquistas">Conheça o elenco principal do Whinsdor Club</h2>
+
+
+
+
+
+    <div id="modais-conquistas">
+        <!-- Ícone Campeonatos' -->
+        <div class="conquista">
+            <div class="icone-texto" onclick="abrirModal('modalCampeonatos')">
+                <div class="icone-hover-wrapper">
+                    <img src="/conquistas/trophyimg/trophy1.png" class="icone-base" alt="campeonatoimg">
+                    <img src="/conquistas/trophyimg/trophy1-hover.png" class="icone-hover" alt="hover-campeonato">
+                    <span class="numeroConquista">6x</span>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Campeonatos -->
+        <div id="modalCampeonatos" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal('modalCampeonatos')">&times;</span>
+                <h2>Campeonatos</h2>
+
+                <div class="abas">
+                    <button class="aba ativa" onclick="abrirAba(event, 'camp2034')">2034/35</button>
+                    <button class="aba" onclick="abrirAba(event, 'camp2033')">2033/3034</button>
+                    <button class="aba" onclick="abrirAba(event, 'camp2032')">2032/33</button>
+                    <button class="aba" onclick="abrirAba(event, 'camp2031')">2031/32</button>
+                    <button class="aba" onclick="abrirAba(event, 'camp2030')">2030/31</button>
+                    <button class="aba" onclick="abrirAba(event, 'camp2026')">2026/27</button>
+                </div>
+
+                <div id="camp2034" class="conteudo-aba mostrar"> </div>
+                <div id="camp2033" class="conteudo-aba"> </div>
+                <div id="camp2032" class="conteudo-aba"> </div>
+                <div id="camp2031" class="conteudo-aba"> </div>
+                <div id="camp2030" class="conteudo-aba"> </div>
+                <div id="camp2026" class="conteudo-aba"> </div>
+            </div>
+
+        </div>
+
+        <!-- Ícone Copas -->
+        <div class="conquista" onclick="abrirModal('modalCopas')">
+            <div class="icone-texto">
+                <div class="icone-hover-wrapper">
+                    <img src="/conquistas/trophyimg/trophy2.png" class="icone-base" alt="campeonatoimg">
+                    <img src="/conquistas/trophyimg/trophy2-hover.png" class="icone-hover" alt="hover-campeonato">
+                    <span class="numeroConquista">3x</span>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Copas -->
+        <div id="modalCopas" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal('modalCopas')">&times;</span>
+                <h2>Copas</h2>
+
+                <div class="abas">
+                    <button class="aba ativa" onclick="abrirAba(event, 'copa2033')">2033/34</button>
+                    <button class="aba" onclick="abrirAba(event, 'copa2032')">2032/33</button>
+                    <button class="aba" onclick="abrirAba(event, 'copa2031')">2031/32</button>
+
+                </div>
+
+                <div id="copa2033" class="conteudo-aba mostrar"> </div>
+                <div id="copa2032" class="conteudo-aba"></div>
+                <div id="copa2031" class="conteudo-aba"></div>
+            </div>
+        </div>
+
+
+
+        <!-- Ícone Supercopas -->
+        <div class="conquista" onclick="abrirModal('modalSupercopas')">
+            <div class="icone-texto">
+                <div class="icone-hover-wrapper">
+                    <img src="/conquistas/trophyimg/trophy3.png" class="icone-base" alt="campeonatoimg">
+                    <img src="/conquistas/trophyimg/trophy3-hover.png" class="icone-hover" alt="hover-campeonato">
+                    <span class="numeroConquista">2x</span>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Supercopas -->
+        <div id="modalSupercopas" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal('modalSupercopas')">&times;</span>
+                <h2>Supercopas</h2>
+
+                <div class="abas">
+                    <button class="aba ativa" onclick="abrirAba(event, 'super2033')">2033/34</button>
+                    <button class="aba" onclick="abrirAba(event, 'super2032')">2032/33</button>
+                </div>
+
+                <div id="super2033" class="conteudo-aba mostrar"> </div>
+                <div id="super2032" class="conteudo-aba"> </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Ícone Internacional -->
+        <div class="conquista" onclick="abrirModal('modalInternacionais')">
+            <div class="icone-texto">
+                <div class="icone-hover-wrapper">
+                    <img src="/conquistas/trophyimg/trophy4.png" class="icone-base" alt="campeonatoimg">
+                    <img src="/conquistas/trophyimg/trophy4-hover.png" class="icone-hover" alt="hover-campeonato">
+                    <span class="numeroConquista">2x</span>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Internacional-->
+        <div id="modalInternacionais" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal('modalInternacionais')">&times;</span>
+                <h2>Competições Internacionais</h2>
+
+                <div class="abas">
+                    <button class="aba ativa" onclick="abrirAba(event, 'ucl2034')">2034/35</button>
+                    <button class="aba" onclick="abrirAba(event, 'ucl2032')">2032/33</button>
+                </div>
+
+                <div id="ucl2034" class="conteudo-aba mostrar"> </div>
+                <div id="ucl2032" class="conteudo-aba"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/conquistas/conquistas-data/campeonatos-data.js"></script>
+    <script src="/conquistas/conquistas-data/copas-data.js"></script>
+    <script src="/conquistas/conquistas-data/internacionais-data.js"></script>
+    <script src="/conquistas/conquistas-data/supercopas-data.js"></script>
+
+    <script src="/conquistas/conquistas.js"></script>
+
+
+
+
+    
+    <!-- Container da transição -->
+    <div id="word-transition">
+        <span id="transition-word"></span>
+    </div>
+
+
+
+
+
+
+    <!-- Intro inicial -->
+
+    <div id="intro-animation" class="intro">
+        <div class="club-name">
+            <span>W</span><span>H</span><span>I</span><span>N</span><span>S</span><span>D</span><span>O</span><span>R</span>
+            <div class="club-subname">
+                <span>C</span><span>L</span><span>U</span><span>B</span>
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="/imagens/WhinsdorClubEscudo5.png" alt="Escudo do Clube">
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        preencherConquistasCampeonatos();
+        preencherConquistasCopas();
+        preencherConquistasSupercopas();
+        preencherConquistasInternacionais();
+    </script>
+
+
+</body>
+
+</html>
+
+
+</br></br></br></br>

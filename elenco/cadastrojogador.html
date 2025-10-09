@@ -1,0 +1,184 @@
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Jogador</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../imagens/WhinsdorClubEscudo.png">
+    <style>
+        @keyframes trocaCor {
+            0% {
+                background-color: #0b1d52;
+            }
+
+            15% {
+                background-color: rgb(10, 10, 70);
+            }
+
+            30% {
+                background-color: #0b1d52;
+            }
+
+            45% {
+                background-color: #040b30;
+            }
+
+            60% {
+                background-color: #0b1d52;
+            }
+
+            75% {
+                background-color: rgb(13, 13, 81);
+            }
+
+            100% {
+                background-color: #0b1d52;
+            }
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            animation: trocaCor 10s linear infinite;
+            background-position: center;
+            color: #ffe224;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3vw;
+            text-transform: uppercase;
+            color: #ffe224;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        form {
+            background-color: #001b3a;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);
+            max-width: 500px;
+            width: 100%;
+            animation: zoomIn 0.5s ease;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 16px;
+            font-size: 1.1em;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 6px;
+            background-color: #0f1c38;
+            color: #ffe224;
+            font-size: 1em;
+        }
+
+        input:focus {
+            outline: 2px solid #ffe224;
+            background-color: #142646;
+        }
+
+        button {
+            background-color: #ffe224;
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #fff05e;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adicionar jogador</h1>
+
+    <form id="form-jogador">
+        <label>Nome: <input name="nome" type="text" required></label>
+        <label>Posição: <input name="posicao" type="text" required></label>
+        <label>Gols: <input type="number" name="gols" required></label>
+        <label>Assistências: <input type="number" name="assistencias" required></label>
+        <label>Jogos: <input type="number" name="jogos" required></label>
+        <label>Amarelos: <input type="number" name="amarelos" required></label>
+        <label>Vermelhos: <input type="number" name="vermelhos" required></label>
+        <label>Temporadas: <input type="number" name="temporadas" required></label>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    
+      <p id="mensagem" style="color: green; display: none;">Dados enviados com sucesso!</p>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRmTyrcEUowJR6MoVsD8m_iwD11uGa0jZ1V_AJIoCsMoNkvZAnCZDYWW0noe9Hrn8R/exec';
+        const form = document.getElementById('form-jogador');
+        const mensagem = document.getElementById('mensagem');
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+    
+          fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+          })
+          .then(response => {
+            mensagem.style.display = 'block';
+            form.reset();
+            setTimeout(() => mensagem.style.display = 'none', 4000);
+          })
+          .catch(error => alert('Erro ao enviar: ' + error.message));
+        });
+      </script>
+    </body>
+</body>
+
+
+
+</html>
+</br>
