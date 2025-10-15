@@ -3,9 +3,7 @@
   src: url("../fontes/Montserrat/Montserrat-VariableFont_wght.ttf")
     format("truetype");
 }
-body{
-  font-family: "Montserrat";
-}
+
 
 @keyframes trocaCor {
   0% {
