@@ -103,7 +103,7 @@ O projeto foi desenvolvido em **HTML, CSS e JavaScript**, com foco em **design l
 - 🔤 **Tipografia:** Mistura de modernidade e tradição, representando o espírito inglês.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gustavorcaetano/whinsdor-club-site/imagens/WhinsdorClubEscudoEscudo.png" width="120" alt="Escudo Whinsdor Club">
+  <img src="https://raw.githubusercontent.com/gustavorcaetano/whinsdor-club-site/main/imagens/WhinsdorClubEscudoEscudo.png" width="120" alt="Escudo Whinsdor Club">
 </div>
 
 ---
