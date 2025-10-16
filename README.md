@@ -56,12 +56,15 @@ Desde então, o clube defende um futebol **ético, formador e sustentável**, to
 | 🗓 **2032/33** | 🏆 Campeão da Premier League + Carabao Cup / 🥈 Vice da Champions |
 | 🗓 **2033/34** | 🏆 Campeão da Premier League / 🏆 Campeão da Champions |
 
+## 🏆 Títulos Recentes
+
 <div align="center">
-
-🏆 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Premier_League_logo.svg" width="60">  
-⚜️ <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/UEFA_Champions_League_logo_2.svg" width="60">
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Premier_League_logo.svg" width="60" alt="Premier League">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/UEFA_Champions_League_logo_2.svg" width="60" alt="Champions League">
 </div>
+
+> 🦁 *Orgulho, glória e tradição.*
+
 
 ---
 
