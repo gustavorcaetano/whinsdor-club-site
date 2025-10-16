@@ -1,7 +1,6 @@
 <div align="center">
 
 
-<img src="https://raw.githubusercontent.com/gustavorcaetano/whinsdor-club-site/main/imagens/banner-whinsdor.png" alt="Banner Whinsdor Club" width="50%">
 
 ---
 
