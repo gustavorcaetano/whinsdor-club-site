@@ -1,14 +1,13 @@
 <div align="center">
 
-
-<img src="https://raw.githubusercontent.com/gustavorcaetano/whinsdor-club-site/main/imagens/banner-whinsdor2.png" alt="Banner Whinsdor Club" width="100%">
-
 ---
 
 # 🦁 **WHINSDOR CLUB**
 ### *Tradição e Reconstrução*  
 **“In Concordia Stamus” — Na harmonia permanecemos.**
 
+
+<img src="https://raw.githubusercontent.com/gustavorcaetano/whinsdor-club-site/main/imagens/banner-whinsdor2.png" alt="Banner Whinsdor Club" width="100%">
 ---
 
 
