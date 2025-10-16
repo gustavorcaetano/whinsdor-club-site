@@ -4,7 +4,6 @@
     format("truetype");
 }
 
-
 @keyframes trocaCor {
   0% {
     background-color: #ffd816;
@@ -398,7 +397,7 @@ h2 {
   font-weight: 1500;
   letter-spacing: -10px;
   font-size: 10vw;
-  margin-left: 11vw;
+  margin-left: 8.5vw;
   margin-top: 25vw;
   position: absolute;
 }
@@ -409,7 +408,7 @@ h2 {
   font-weight: 450;
   text-align: center;
   font-size: 10vw;
-  margin-left: 62.5vw;
+  margin-left: 64.5vw;
   margin-top: 25vw;
   position: absolute;
 }
@@ -478,7 +477,6 @@ h2 {
   font-weight: 700;
   margin-top: 100vw;
 }
-
 
 .titulosOrigem {
   display: flex;
