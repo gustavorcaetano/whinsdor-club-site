@@ -479,9 +479,9 @@ h2 {
   margin-top: 100vw;
 }
 .div-historia {
-  gap: -15px;
+  gap: 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
