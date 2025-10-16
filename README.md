@@ -110,7 +110,7 @@ O projeto foi desenvolvido em **HTML, CSS e JavaScript**, com foco em **design l
 ## 💡 Desenvolvimento
 
 👨‍💻 **Autor:** Gustavo Ramos Caetano  
-🎓 *Estudante de Informática e Desenvolvedor Web*  
+🎓 *Estudante de Informática e Desenvolvedor Web* do **Instituto Federal de Educação, Ciência e Tecnologia de São Paulo IFSP Guarulhos**
 📍 Projeto criativo e educacional sobre o universo do futebol inglês fictício.
 
 ---
