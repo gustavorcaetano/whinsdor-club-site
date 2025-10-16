@@ -479,7 +479,7 @@ h2 {
   margin-top: 100vw;
 }
 .div-historia {
-  gap: 15px;
+  gap: -55px;
   display: flex;
   justify-content: center;
   align-items: center;
