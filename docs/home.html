@@ -15,15 +15,77 @@
 </head>
 
 <body>
+  <!-- Barra de navegação
   <div class="barranavegacao">
-    <a href="#" onclick="goToPage(event, '../historia/historia.html')">HISTÓRIA</a>
-    <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">ELENCO</a>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">HISTÓRIA</a>
+      <div class="dropdown-menu">
+        <a href="#" onclick="goToPage(event, '../historia/origem.html')">Origem</a>
+        <a href="#" onclick="goToPage(event, '../historia/era-ouro.html')">Era de Ouro</a>
+        <a href="#" onclick="goToPage(event, '../historia/reconstrucao.html')">Reconstrução</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">ELENCO</a>
+      <div class="dropdown-menu">
+        <a href="#" onclick="goToPage(event, '../elenco/principal.html')">Elenco Principal</a>
+        <a href="#" onclick="goToPage(event, '../elenco/base.html')">Categorias de Base</a>
+        <a href="#" onclick="goToPage(event, '../elenco/comissao.html')">Comissão Técnica</a>
+      </div>
+    </div>
+
     <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">CONQUISTAS</a>
+    <a href="#" onclick="goToPage(event, '../paginaMidia/midia.html')">MÍDIA</a>
 
-    <a href="#" onclick="goToPage(event, '../paginaMidia/midia.html')"> MÍDIA </a>
+    <img src="../imagens/login-avatar2.png" id="fotoperfil" alt="Perfil" />
+  </div> -->
 
-    <img src="../imagens/login-avatar2.png" id="fotoperfil" />
-  </div>
+
+  <nav class="barranavegacao">
+    <ul>
+      <li class="dropdown">
+        <a href="#">HISTÓRIA</a>
+
+        <div class="dropdown-menu">
+          <a href="#" onclick="goToPage(event, '../historia/fundacao.html')">Fundação</a>
+          <a href="#" onclick="goToPage(event, '../historia/origem.html')">Títulos</a>
+          <a href="#" onclick="goToPage(event, '../historia/origem.html')">Momentos Marcantes</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">ELENCO</a>
+
+        <div class="dropdown-menu">
+          <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">Principal</a>
+          <a href="#" onclick="goToPage(event, '../elenco/base.html')">Base</a>
+          <a href="#" onclick="goToPage(event, '../elenco/comissao.html')">Comissão Técnica</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">CONQUISTAS</a>
+
+        <div class="dropdown-menu">
+          <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">Equipe Principal</a>
+          <a href="#" onclick="goToPage(event, '../conquistas/conquistasbase.html')">Categorias de Base</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">MÍDIA</a>
+        <div class="dropdown-menu">
+          <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">Fotos de mídia </a>
+          <a href="#" onclick="goToPage(event, '../conquistas/conquistasbase.html')">Conquistas - Categoria de Base</a>
+        </div>
+      </li>
+    </ul>
+
+    <img src="../imagens/login-avatar2.png" id="fotoperfil" alt="Perfil" />
+  </nav>
+
+
 
 
   <a href="home.html">

@@ -14,27 +14,58 @@
 </head>
 
 <body>
+    <a href="../docs/home.html">
+        <img src="../imagens/WhinsdorClubEscudo5.png" alt="Escudo do Clube" id="escudo">
+    </a>
 
 
 
 
 
-    <div class="barranavegacao">
+    <nav class="barranavegacao">
+        <ul>
+          <li class="dropdown">
+            <a href="#">HISTÓRIA</a>
+    
+            <div style="text-transform: uppercase;" class="dropdown-menu">
+              <a href="#" onclick="goToPage(event, '../historia/fundacao.html')">Fundação</a>
+              <a href="#" onclick="goToPage(event, '../historia/origem.html')">Títulos</a>
+              <a href="#" onclick="goToPage(event, '../historia/historia.html')">Momentos Marcantes</a>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#">ELENCO</a>
+    
+            <div class="dropdown-menu">
+              <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">Principal</a>
+              <a href="#" onclick="goToPage(event, '../elenco/base.html')">Base</a>
+              <a href="#" onclick="goToPage(event, '../elenco/comissao.html')">Comissão Técnica</a>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#">CONQUISTAS</a>
+    
+            <div class="dropdown-menu">
+              <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">Equipe Principal</a>
+              <a href="#" onclick="goToPage(event, '../conquistas/conquistasbase.html')">Categorias de Base</a>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#">MÍDIA</a>
+            <div class="dropdown-menu">
+              <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">Fotos de mídia </a>
+              <a href="#" onclick="goToPage(event, '../conquistas/conquistasbase.html')">Conquistas - Categoria de Base</a>
+            </div>
+          </li>
+        </ul>
+    
+        <img src="../imagens/login-avatar.png" id="fotoperfil" alt="Perfil" />
+      </nav>
 
-        <a href="../docs/home.html">
-            <img src="../imagens/WhinsdorClubEscudo5.png" alt="Escudo do Clube" id="escudo">
-        </a>
-
-        <div class="links-navegacao">
-            <a href="#" onclick="goToPage(event, '../docs/home.html')">HOME</a>
-            <a href="#" onclick="goToPage(event, '../historia/historia.html')">HISTÓRIA</a>
-            <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">ELENCO</a>
-
-            <a href="#" onclick="goToPage(event, '../paginaMidia/midia.html')"> MÍDIA </a>
-
-            <img src="../imagens/login-avatar.png" id="fotoperfil">
-        </div>
-    </div>
+      
 
     <div class="div-conquistas">
         <h1 id="titulo-conquistas">CONQUISTAS</h1>

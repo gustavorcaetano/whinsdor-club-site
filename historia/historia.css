@@ -364,7 +364,7 @@ h2 {
   /* usa padding lateral em vez de margin negativa */
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   word-spacing: 25px;
   letter-spacing: 1px;
   z-index: 1000;
@@ -375,10 +375,6 @@ h2 {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  font-size: 20px;
-  font-weight: bold;
-  transition: 1.3s;
-  opacity: 0.8;
   transition: 1s ease;
 }
 #fotoperfil {
@@ -387,6 +383,94 @@ h2 {
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+}
+
+/* ===============================
+   DROPDOWN (menus suspensos)
+=================================*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Submenu oculto inicialmente */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 80%; /* logo abaixo do texto */
+  left: -25%;
+  background-color: transparent;
+  border-bottom: solid 2px #e0b62db7;
+  min-width: 160px;
+  padding: 8px 0;
+  z-index: 10000; /* garante que apareça acima de tudo */
+  animation: fadeDown 0.4s linear;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  justify-content: flex-end;
+}
+/* Itens do submenu */
+.dropdown-menu a {
+  display: block;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  background-color: #ffe224;
+  color: #000000;
+  font-size: 10px;
+  align-items: center;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e0b62db7;
+  color: #ffffff;
+  font-weight: bolder;
+  transition: 0.5s ease;
+}
+
+/* Corrige o body para não interferir */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Animação opcional do texto da barra */
+@keyframes trocaCor2 {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+/* Animação */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação suave */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #titulo-historia {

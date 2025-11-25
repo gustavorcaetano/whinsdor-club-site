@@ -21,17 +21,49 @@
 
 
 
-    <div class="barranavegacao">
+    <nav class="barranavegacao">
+        <ul>
+            <li class="dropdown">
+                <a href="#">HISTÓRIA</a>
 
-        <a href="#" onclick="goToPage(event, '../docs/home.html')">HOME</a>
-        <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">ELENCO</a>
-        <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">CONQUISTAS</a>
+                <div class="dropdown-menu">
+                    <a href="#" onclick="goToPage(event, '../historia/fundacao.html')">Fundação</a>
+                    <a href="#" onclick="goToPage(event, '../historia/origem.html')">Títulos</a>
+                    <a href="#" onclick="goToPage(event, '../historia/origem.html')">Momentos Marcantes</a>
+                </div>
+            </li>
 
-        <a href="#" onclick="goToPage(event, '../paginaMidia/midia.html')"> MÍDIA </a>
+            <li class="dropdown">
+                <a href="#">ELENCO</a>
 
+                <div class="dropdown-menu">
+                    <a href="#" onclick="goToPage(event, '../elenco/elenco.html')">Principal</a>
+                    <a href="#" onclick="goToPage(event, '../elenco/base.html')">Base</a>
+                    <a href="#" onclick="goToPage(event, '../elenco/comissao.html')">Comissão Técnica</a>
+                </div>
+            </li>
 
-        <img src="../imagens/login-avatar.png" id="fotoperfil">
-    </div>
+            <li class="dropdown">
+                <a href="#">CONQUISTAS</a>
+
+                <div class="dropdown-menu">
+                    <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">Equipe Principal</a>
+                    <a href="#" onclick="goToPage(event, '../conquistas/conquistasbase.html')">Categorias de Base</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">MÍDIA</a>
+                <div class="dropdown-menu">
+                    <a href="#" onclick="goToPage(event, '../conquistas/conquistas.html')">Fotos de mídia </a>
+                    <a href="#" onclick="goToPage(event, '../conquistas/conquistasbase.html')">Conquistas - Categoria de
+                        Base</a>
+                </div>
+            </li>
+        </ul>
+
+        <img src="../imagens/login-avatar.png" id="fotoperfil" alt="Perfil" />
+    </nav>
 
     <div class="div-elenco">
         <h1 id="titulo-historia">WHINSDOR</h1>
@@ -212,7 +244,7 @@
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-left">
-                <h3 class="introducaoHistoria">Grande Sopro de Ambição</h3>
+                <h3 class="introducaoHistoria">Grande Sopro </br> de Ambição</h3>
                 <h4 class="introducaoTemporada">(2025/26)</h4>
             </div>
             <div class="timeline-right">
@@ -438,7 +470,7 @@
     </div>
 
 
-    
+
 
 
 

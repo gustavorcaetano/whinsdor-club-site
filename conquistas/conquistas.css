@@ -5,6 +5,7 @@ body {
   text-align: justify;
   background-position: center;
   overflow: visible;
+  overflow-y: hidden;
 }
 
 body.modal-aberto {
@@ -49,31 +50,124 @@ body.modal-aberto {
 
 .barranavegacao {
   display: flex;
-  justify-content: space-between; /* Corrige o alinhamento geral */
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  background-color: #ffe224;
-  padding: 20px 40px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  flex-wrap: wrap;
+  /* permite quebrar linha se o conteúdo for muito largo */
+  gap: 40px;
   position: fixed;
-  margin-top: -30px;
-  transition: 0.5s ease;
   top: 0;
   left: 0;
+  width: 100%;
+  height: auto;
+  /* altura se adapta se os itens quebrarem linha */
+  background-color: transparent;
+  color: black;
+  padding: 30px 40px;
+  /* usa padding lateral em vez de margin negativa */
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  word-spacing: 25px;
+  letter-spacing: 1px;
+
   z-index: 1000;
+  transition: all 1.3s ease;
   box-sizing: border-box;
 }
 .barranavegacao:hover {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  font-size: 20px;
-  font-weight: bold;
   transition: 1.3s ease;
-  opacity: 0.8;
-  transition: 1s ease;
+}
+
+/* ===============================
+   DROPDOWN (menus suspensos)
+=================================*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Submenu oculto inicialmente */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 80%; /* logo abaixo do texto */
+  left: -25%;
+  background-color: transparent;
+  border-bottom: solid 2px #e0b62db7;
+  min-width: 160px;
+  padding: 8px 0;
+  z-index: 10000; /* garante que apareça acima de tudo */
+  animation: fadeDown 0.4s linear;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  justify-content: flex-end;
+}
+/* Itens do submenu */
+.dropdown-menu a {
+  display: block;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  background-color: #ffe224;
+  color: #000000;
+  font-size: 10px;
+  align-items: center;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e0b62db7;
+  color: #ffffff;
+  font-weight: bolder;
+  transition: 0.5s ease;
+}
+
+/* Corrige o body para não interferir */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Animação opcional do texto da barra */
+@keyframes trocaCor2 {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+/* Animação */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação suave */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .links-navegacao {
@@ -100,15 +194,20 @@ a:hover {
 }
 
 #escudo {
+  position: absolute;
+  position: fixed;
+  margin-top: -30px;
+  margin-left: 20px;
+  transition: 1.3s;
   width: 100px;
-  margin-top: 10px;
-  transition: 0.5s;
+  z-index: 8888;
 }
 
 #escudo:hover {
-  width: 100px;
-  margin-top: 10px;
-  transition: 0.5s;
+  position: absolute;
+  position: fixed;
+  margin-left: 20px;
+  transition: 1.3s;
   cursor: pointer;
 }
 
@@ -121,7 +220,6 @@ a:hover {
   letter-spacing: -10px;
   font-size: 10vw;
   font-family: "Montserrat";
-  margin-top: vw;
 }
 
 #titulo-conquistas2 {
@@ -130,7 +228,6 @@ a:hover {
   font-weight: 450;
   text-align: center;
   font-size: 10vw;
-
   margin-top: 25vw;
 }
 
@@ -328,12 +425,6 @@ a:hover {
   }
 }
 
-
-
-
-
-
-
 /* ===== Intro inicial ===== */
 .intro {
   position: fixed;
@@ -350,58 +441,7 @@ a:hover {
 }
 
 /* Nome do clube (voando letra por letra) */
-.intro .club-name {
-  display: flex;
-  gap: 8px; /* espaçamento entre letras */
-  font-size: 3.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #000; /* letras pretas */
-  animation: fadeTextOut 0.8s ease 2.8s forwards; /* desaparece */
-}
 
-.intro .club-name span {
-  opacity: 0;
-  transform: translateY(60px) scale(0.8);
-  animation: flyIn 0.6s ease forwards;
-}
-
-.intro .club-name span:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.intro .club-name span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.intro .club-name span:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.intro .club-name span:nth-child(4) {
-  animation-delay: 0.4s;
-}
-.intro .club-name span:nth-child(5) {
-  animation-delay: 0.5s;
-}
-.intro .club-name span:nth-child(6) {
-  animation-delay: 0.6s;
-}
-.intro .club-name span:nth-child(7) {
-  animation-delay: 0.7s;
-}
-.intro .club-name span:nth-child(8) {
-  animation-delay: 0.8s;
-}
-.intro .club-name span:nth-child(9) {
-  animation-delay: 0.9s;
-}
-.intro .club-name span:nth-child(10) {
-  animation-delay: 1s;
-}
-.intro .club-name span:nth-child(11) {
-  animation-delay: 1.1s;
-}
-.intro .club-name span:nth-child(12) {
-  animation-delay: 1.2s;
-}
 
 @keyframes flyIn {
   0% {
@@ -472,7 +512,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -486,6 +525,7 @@ a:hover {
   display: flex;
   gap: 6px;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   font-size: 3rem;
   font-weight: 800;
   color: rgb(204, 173, 0);
