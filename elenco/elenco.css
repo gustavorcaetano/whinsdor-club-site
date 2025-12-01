@@ -167,6 +167,21 @@ body {
   padding: 2rem;
 }
 
+.comissao-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.comissao-container h3 {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffe224;
+  border: 1px solid #ffe224;
+  box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);
+}
+
 .position-container {
   display: flex;
   flex-direction: column;
@@ -259,10 +274,9 @@ body {
   align-items: center;
   justify-content: center;
   color: #ffe224;
-  /* border: 2px solid #fcd95c; */
+  /* border: 1px solid #ffe224; */
   /* background-color: #001b3a; */
   background-color: transparent;
-  color: #ffd24a;
   text-align: center;
   text-transform: uppercase;
   transition: box-shadow 0.3s ease;
@@ -283,6 +297,7 @@ body {
 .team-card img {
   width: 300px;
   /* border: 2px solid #ffd24a; */
+  border: 1px solid #ffe224;
   box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);
   border-radius: 10px;
   transition: 0.4s ease;
