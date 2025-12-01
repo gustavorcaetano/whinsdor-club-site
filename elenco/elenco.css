@@ -50,6 +50,7 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 20px;
+  z-index: 1;
 }
 .flip-front img {
   width: 100%;
@@ -68,6 +69,16 @@
   font-size: 1.3em;
   padding: 20px;
   text-align: center;
+}
+/* Garante que o conteúdo injetado preencha o espaço e seja clicável */
+.flip-back-content {
+  display: flex; /* Usa flexbox para centralizar a bandeira e o texto */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .flip-back-content button {
   background-color: #ffe224;
@@ -248,31 +259,39 @@ body {
   align-items: center;
   justify-content: center;
   color: #ffe224;
-  background-color: #001b3a;
+  /* border: 2px solid #fcd95c; */
+  /* background-color: #001b3a; */
+  background-color: transparent;
   color: #ffd24a;
   text-align: center;
+  text-transform: uppercase;
   transition: box-shadow 0.3s ease;
-  box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);
+  /* box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);  */
   animation: zoomIn 0.3s ease;
   animation: fadeIn 0.3s ease-in-out;
   padding: 20px;
-  height: auto;
+  height: 365px;
   border-radius: 12px;
   transition: 0.8s;
 }
 .team-card:hover {
   /* transform: scale(1.05); */
-  box-shadow: 0 0 25px #ffe224;
+  /* box-shadow: 0 0 25px #ffe224; */
   transition: 1.8s;
   animation: fadeIn 0.3s ease-in-out;
 }
 .team-card img {
-  width: 200px;
+  width: 300px;
+  /* border: 2px solid #ffd24a; */
+  box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);
   border-radius: 10px;
+  transition: 0.4s ease;
   cursor: pointer;
 }
 .team-card img:hover {
   border-radius: 10px;
+  transition: 0.4s ease;
+  box-shadow: 0 0 25px #ffe224;
 }
 
 section {
@@ -288,7 +307,7 @@ section {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 160%;
   overflow: auto;
   transition: 0.3s ease;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
@@ -327,46 +346,35 @@ section {
 .zoom-modal-content {
   margin: auto;
   padding: 10px;
-
   width: 80%;
+  height: 500px;
   max-width: 500px;
+  max-height: 90vh; /* para dar rolagem se necessário */
   text-align: center;
   background-color: none;
+  background-color: transparent;
   backdrop-filter: blur(15px);
   /* efeito de vidro */
   transition: 0.5s;
-  max-height: 90vh; /* para dar rolagem se necessário */
   overflow-y: auto; /* ativa a rolagem vertical */
   padding-bottom: 100px; /* cria um "espaço extra" no fim */
-
-  background-color: none;
-  backdrop-filter: blur(15px);
+  text-transform: uppercase;
+  font-weight: 600;
   /* efeito vidro */
-  transition: 0.5s;
-  border: 2px solid none;
-  box-shadow: 0 0 25px rgba(11, 94, 215, 0.6);
+  border: 2px solid #ffe224;
+  /* box-shadow: 0 0 25px rgba(11, 94, 215, 0.6); */
   animation: zoomIn 0.3s ease;
-  color: none;
+  color: transparent;
   border-radius: 10px;
-
+  overflow-x: hidden;
   overflow: scroll;
 }
 
 .zoom-modal-content:hover {
-  margin: auto;
-  padding: 10px;
-  padding-bottom: 100px;
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
   background-color: none;
-  backdrop-filter: blur(15px);
-  /* efeito de vidro */
   transition: 0.5s;
+  /* border: 2px solid #ffe224; */
 
-  border: 2px solid #ffe224;
-
-  color: none;
   border-radius: 20px;
 }
 
@@ -374,10 +382,10 @@ section {
   max-width: 100%;
   max-height: 80vh;
   margin-top: 20px;
-  width: 50%;
+  width: 80%;
   height: auto;
   object-fit: contain;
-  border: 2px solid #003068;
+  border: 2px solid #ffe224;
   border-radius: 20px;
   transition: 0.5s;
 }
@@ -385,9 +393,6 @@ section {
 .zoom-modal-content img:hover {
   max-width: 100%;
   max-height: 80vh;
-  width: 50%;
-  height: auto;
-  object-fit: contain;
   transition: 0.5s;
   border: 2px solid #ffe224;
   border-radius: 20px;
@@ -397,6 +402,9 @@ section {
   margin-top: 15px;
   font-size: 1.6em;
   font-family: "Montserrat";
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #ffe224;
   color: #ffe224;
 }
 
@@ -424,9 +432,9 @@ section {
 }
 
 .close-btn {
-  color: #003068;
-  background: none;
-  border: 2px solid #003068;
+  color: #ffe224;
+  background: transparent;
+  border: 2px solid #ffe224;
   border-radius: 10px;
   font-size: 1.5vw;
   font-family: "Montserrat";
@@ -737,10 +745,6 @@ p {
   padding-bottom: 100px; /* cria um "espaço extra" no fim */
 }
 #bioText {
-  color: #001b3a;
-  transition: 0.5s ease;
-}
-#bioText:hover {
   color: #ffffff;
   transition: 0.5s ease;
 }

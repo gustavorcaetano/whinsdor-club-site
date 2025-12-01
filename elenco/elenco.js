@@ -1,33 +1,33 @@
+// A função showModal atualizada para injetar o conteúdo da bandeira
 function showModal(imgSrc, text, nationality) {
   var modal = document.getElementById("zoomModal");
   var modalImg = document.getElementById("zoomImg");
   var captionText = document.getElementById("zoomText");
-  var backContent = document.getElementById("zoomBackContent");
+  var backContent = document.getElementById("zoomBackContent"); // O div 'flip-back'
 
   modal.style.display = "block";
   modalImg.src = imgSrc;
   captionText.innerHTML = text;
 
-  // Mostrar bandeira na parte de trás
+  // 1. Mostrar bandeira na parte de trás
   const flagUrl = getFlagUrl(nationality);
+
   backContent.innerHTML = `
-  <div class="flip-back-content" onclick="flipBackModalCard()" style="cursor: pointer;">
-    <img src="${flagUrl}" alt="${nationality}" style="width: 100px; height: auto; margin-bottom: 10px;" />
-    <p>${nationality}</p>
-  </div>
-  `;
-  
-  
-  
-  // Imagem vai voltar pra frente.
+<div class="flip-back-content" style="height: 100%; width: 100%;" onclick="flipModalCard()">
+  <img src="${flagUrl}" alt="Bandeira ${nationality}" style="width: 100px; height: auto; margin-bottom: 10px;" />
+  <h2>${nationality}</h2>
+</div>
+`;
+
+  // 2. Garante que o card está na frente ao abrir o modal
   document.getElementById("modalFlipCard").classList.remove("flipped");
-  
 }
 
+// A função flipModalCard que faz o toggle (já existe no seu código, mas deixo como referência)
 function flipModalCard() {
-  document.getElementById("modalFlipCard").classList.add("flipped");
+  const card = document.getElementById("modalFlipCard");
+  card.classList.toggle("flipped");
 }
-// Função da bandeira do país atras
 
 function getFlagUrl(nationality) {
   const countries = {
@@ -50,12 +50,14 @@ function getFlagUrl(nationality) {
   };
 
   const code = countries[nationality];
-  return code ? `./flags/${code}.png` : `./flags/placeholder.png`; // ou qualquer imagem genérica
+  return code ? `../elenco/flags/${code}.png` : `../elenco/flags/brasil.png`; // ou qualquer imagem genérica
 }
 
 function closeModal() {
   var modal = document.getElementById("zoomModal");
   modal.style.display = "none";
+  // Adicionar: Garante que o card volte para a frente ao fechar
+  document.getElementById("modalFlipCard").classList.remove("flipped");
 }
 
 function fecharModal(id) {
@@ -75,6 +77,8 @@ function abrirZoom(imagem) {
 
 function fecharZoom() {
   document.getElementById("zoomModal").style.display = "none";
+  // Adicionar: Garante que o card volte para a frente ao fechar
+  document.getElementById("modalFlipCard").classList.remove("flipped");
 }
 
 function abrirBio(texto) {
@@ -103,7 +107,7 @@ function fecharStats() {
 }
 
 // Fecha o modal ao clicar fora da área de conteúdo
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   var modal = document.getElementById("zoomModal");
   var content = document.getElementById("modalFlipCard");
 
@@ -113,27 +117,24 @@ window.addEventListener("click", function(event) {
 });
 
 // Fecha o modal ao clicar fora dele
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   const modal = document.getElementById("bioModal");
   const modalContent = document.getElementById("bio-modal-content");
 
   if (event.target === modal) {
-      modal.style.display = "none";
+    modal.style.display = "none";
   }
 });
 
 // Fecha o modal ao clicar fora dele
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   const modal = document.getElementById("statsModal");
   const modalContent = document.getElementById("stats-modal-content");
 
   if (event.target === modal) {
-      modal.style.display = "none";
+    modal.style.display = "none";
   }
 });
-
-
-
 
 // Validação o ngc
 
@@ -191,12 +192,6 @@ fetch(
   .then((res) => res.text())
   .then((msg) => console.log("RESPOSTA:", msg))
   .catch((err) => console.error("ERRO:", err));
-
-
-
-
-
-
 
 // Remove a transição se recarregar a página
 window.addEventListener("load", () => {
