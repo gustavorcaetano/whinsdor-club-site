@@ -2,7 +2,7 @@
 
 ---
 
-# 🦁 **WHINSDOR CLUB**
+#  **WHINSDOR CLUB**
 ### *Tradição e Reconstrução*  
 **“In Concordia Stamus” — Na harmonia permanecemos.**
 
