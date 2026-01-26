@@ -297,8 +297,55 @@ body {
   height: auto;
   margin-top: 0.05px;
   background-position: center;
-
   overflow: visible;
+}
+
+#textos-fund {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  /* margin-right: 120px; */
+  margin-top: 65vw; /* Ajusta pra encaixar com seu layout */
+  padding: 50px 0;
+  color: black;
+  justify-content: center;
+  position: relative; /* tira o absolute */
+}
+#textos-principal {
+  color: black;
+  font-size: 50px;
+}
+.paragrafos-fund {
+  font-size: 20px;
+  text-align: justify;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.itens-fund {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.títulotext-fund {
+  background-color: black;
+  color: #ffe224;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.titulotext-fund:hover {
+  cursor: default;
+  color: #000000;
+  transition: 0.5s ease;
 }
 
 #escudo {
@@ -507,6 +554,49 @@ body {
   font-weight: 400;
   margin-left: 33vw;
   margin-top: 37vw;
+  position: absolute;
+}
+
+.div-fund {
+  display: flex;
+  justify-content: center;
+}
+#titulo-fund {
+  position: absolute;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 10vw;
+  text-align: center;
+  letter-spacing: -15px;
+  margin-top: 10vw;
+  color: rgb(0, 0, 0);
+}
+
+#subtitulo-fund {
+  display: flex;
+  font-family: "Montserrat";
+  text-align: center;
+  left: 35%;
+  font-size: 2vw;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 22vw;
+  position: absolute;
+  color: rgb(96, 75, 0);
+}
+
+#resumofund {
+  font-family: "Montserrat";
+  text-align: justify;
+  font-weight: 500;
+  word-spacing: 20px;
+  padding: 20px;
+  font-size: 24px;
+  margin-top: 35vw;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: rgb(96, 75, 0);
   position: absolute;
 }
 

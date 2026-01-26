@@ -15,7 +15,7 @@
 
 ---
 
-## 🌍 Sobre o Projeto
+##  Sobre o Projeto
 
 O **Whinsdor Club Site** é uma recriação digital e histórica de um dos clubes mais emblemáticos do futebol britânico fictício.  
 Desenvolvido para reunir **a história, o elenco e as conquistas**, o projeto mostra a trajetória de um time renascido das cinzas — um símbolo de **união, juventude e comunidade**.
@@ -24,31 +24,31 @@ Inspirado no documento *“Whinsdor Club: Renascença de uma Lenda Perdida”*, 
 
 ---
 
-## 🏟 O Clube
+##  O Clube
 
 O **Whinsdor Club** nasceu em Windsor, Inglaterra, como um dos pioneiros do futebol mundial.  
 Após décadas esquecido, foi **revivido em 2021** por quatro jovens visionários —  
 **Eddie Spencer, Maggie Thorne, Ollie Darwin e Charlie Tudor** — unidos pelo lema:
 
-> 🕊️ **“In Concordia Stamus” — Na harmonia permanecemos.**
+>  **“In Concordia Stamus” — Na harmonia permanecemos.**
 
 Desde então, o clube defende um futebol **ético, formador e sustentável**, tornando-se referência na Inglaterra e na Europa.
 
 ---
 
-## ⚽ Filosofia e Ideologia
+##  Filosofia e Ideologia
 
-- 🧠 **Formar em Casa:** foco em **jovens britânicos** e talentos da base.  
-- 🌱 **Sustentabilidade:** finanças equilibradas e materiais ecológicos.  
-- 👥 **Comunidade:** o esporte como ferramenta social e educacional.  
-- 🏫 **Academia Concordia:** centro de formação de elite, símbolo do clube.  
+-  **Formar em Casa:** foco em **jovens britânicos** e talentos da base.  
+-  **Sustentabilidade:** finanças equilibradas e materiais ecológicos.  
+-  **Comunidade:** o esporte como ferramenta social e educacional.  
+-  **Academia Concordia:** centro de formação de elite, símbolo do clube.  
 
 > “A maior vitória do Whinsdor não foi uma taça. Foi provar que é possível vencer com valores.”  
 > — *Angus MacLeod, capitão histórico.*
 
 ---
 
-## 🏆 Conquistas Recentes
+##  Conquistas Recentes
 
 | Temporada | Conquistas |
 |------------|------------|
@@ -59,47 +59,47 @@ Desde então, o clube defende um futebol **ético, formador e sustentável**, to
 | 🗓 **2033/34** | 🏆 Campeão da Premier League / 🏆 Campeão da Champions |
 
 
-> 🦁 *Orgulho, glória e tradição.*
+>  *Orgulho, glória e tradição.*
 
 
 ---
 
-## 👑 Ídolos e Lendas
+##  Ídolos e Lendas
 
-- 🧭 **Angus MacLeod** – Capitão eterno e símbolo da reconstrução.  
-- ⚔️ **Axel Bernier** – Pilar defensivo e líder tático.  
-- 🧠 **Daniel Foster** – O maestro do meio-campo.  
-- 🔥 **Darren Cassey** – O prodígio irlandês, herói da Champions.  
-- 🌟 **Leonardo García** – Duas vezes **Bola de Ouro**, ídolo máximo.  
-- 🧤 **Constantin Schmidt** – O muralha alemão.  
-- 🧱 **Renato Moraes** – Capitão da Tríplice Coroa.  
-- 🧑‍🏫 **Renato Madeira** – O técnico lendário que guiou o império Whinsdor.
+-  **Angus MacLeod** – Capitão eterno e símbolo da reconstrução.  
+-  **Axel Bernier** – Pilar defensivo e líder tático.  
+-  **Daniel Foster** – O maestro do meio-campo.  
+-  **Darren Cassey** – O prodígio irlandês, herói da Champions.  
+-  **Leonardo García** – Duas vezes **Bola de Ouro**, ídolo máximo.  
+-  **Constantin Schmidt** – O muralha alemão.  
+-  **Renato Moraes** – Capitão da Tríplice Coroa.  
+-  **Renato Madeira** – O técnico lendário que guiou o império Whinsdor.
 
 ---
 
-## 🖥️ Sobre o Site
+##  Sobre o Site
 
 O projeto foi desenvolvido em **HTML, CSS e JavaScript**, com foco em **design limpo**, **identidade marcante** e **transições suaves** entre as páginas:
 
-- 🏠 **Home** – Apresentação e lema.  
-- 📜 **História** – Linha do tempo e reconstrução do clube.  
-- 👥 **Elenco** – Jogadores e ídolos de todas as eras.  
-- 🏆 **Conquistas** – Títulos e recordes.  
-- 🎥 **Mídia** – Galeria de conteúdo e bastidores (em desenvolvimento).
+-  **Home** – Apresentação e lema.  
+-  **História** – Linha do tempo e reconstrução do clube.  
+-  **Elenco** – Jogadores e ídolos de todas as eras.  
+-  **Conquistas** – Títulos e recordes.  
+-  **Mídia** – Galeria de conteúdo e bastidores (em desenvolvimento).
 
 > 🔗 [Acesse o site oficial do Whinsdor Club](https://gustavorcaetano.github.io/whinsdor-club-site/)
 
 ---
 
-## 🎨 Identidade Visual
+##  Identidade Visual
 
-- 🎨 **Cores oficiais:**
+-  **Cores oficiais:**
   - Amarelo-ouro `#FFD700` → Tradição e luz  
   - Azul-marinho `#0B1B50` → Lealdade e força  
   - Preto `#000000` → Elegância e poder
 
-- 🦁 **Símbolo:** O leão heráldico e o lema *“In Concordia Stamus”*  
-- 🔤 **Tipografia:** Mistura de modernidade e tradição, representando o espírito inglês.
+-  **Símbolo:** O leão heráldico e o lema *“In Concordia Stamus”*  
+-  **Tipografia:** Mistura de modernidade e tradição, representando o espírito inglês.
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/gustavorcaetano/whinsdor-club-site/main/imagens/WhinsdorClubEscudo.png" width="120" alt="Escudo Whinsdor Club">
@@ -107,15 +107,15 @@ O projeto foi desenvolvido em **HTML, CSS e JavaScript**, com foco em **design l
 
 ---
 
-## 💡 Desenvolvimento
+##  Desenvolvimento
 
-👨‍💻 **Autor:** Gustavo Ramos Caetano  
-🎓 *Estudante de Informática e Desenvolvedor Web* do **Instituto Federal de Educação, Ciência e Tecnologia de São Paulo IFSP Guarulhos**
-📍 Projeto criativo e educacional sobre o universo do futebol inglês fictício.
+ **Autor:** Gustavo Ramos Caetano  
+ *Estudante de Informática e Desenvolvedor Web* do **Instituto Federal de Educação, Ciência e Tecnologia de São Paulo IFSP Guarulhos**
+ Projeto criativo e educacional sobre o universo do futebol inglês fictício.
 
 ---
 
-## 📜 Licença
+##  Licença
 
 Este projeto é **não comercial e educacional**, criado para fins de narrativa, design e aprendizado front-end.  
 Todos os direitos autorais e marcas pertencem aos seus respectivos criadores e fontes.
@@ -124,7 +124,7 @@ Todos os direitos autorais e marcas pertencem aos seus respectivos criadores e f
 
 <div align="center">
 
-### 🦁 *Whinsdor Club*  
+###  *Whinsdor Club*  
 **Tradição e Reconstrução.**  
 **“In Concordia Stamus.”**
 
