@@ -33,6 +33,18 @@
     background-color: #ffd500;
   }
 }
+/* Animação opcional do texto da barra */
+@keyframes trocaCor2 {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
 
 #zoomText .palavra {
   display: inline-block;
@@ -61,7 +73,6 @@
   width: 100%;
   margin: 0 auto;
 }
-
 .timeline-line {
   position: absolute;
   left: 50%;
@@ -71,7 +82,6 @@
   transform: translateX(-50%);
   z-index: 0;
 }
-
 .timeline-item {
   display: flex;
   justify-content: space-between;
@@ -93,27 +103,23 @@
   border-radius: 50%;
   z-index: 10;
 }
-
 .timeline-left,
 .timeline-right {
   width: 45%;
   display: flex;
   flex-direction: column;
 }
-
 .timeline-left h3 {
   text-align: right;
-  font-size: 5svh;
+  font-size: 8svh;
   font-weight: bold;
 }
-
 .timeline-left h4 {
   text-align: right;
   margin-top: -40px;
-  font-size: 3svh;
+  font-size: 4svh;
   font-weight: 350;
 }
-
 .timeline-right {
   display: flex;
   flex-direction: column;
@@ -122,13 +128,12 @@
 }
 
 .timeline-right .resumo {
-  font-size: 2svh;
+  font-size: 2.5svh;
   margin-right: 20svh;
   line-height: 1.5;
   gap: 100px;
   color: #111;
 }
-
 .timeline-right img {
   width: 100%;
   max-width: 500px;
@@ -137,11 +142,9 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .timeline-right img:hover {
   transform: scale(1.05);
 }
-
 .timeline img {
   width: 100%;
   max-width: 500px;
@@ -183,7 +186,6 @@ section {
   padding-top: 60px;
   font-family: "Montserrat", sans-serif;
 }
-
 .zoom-modal-content {
   background-color: none;
   margin: auto;
@@ -203,7 +205,6 @@ section {
   color: #ffe224;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
-
 .zoom-modal-content img {
   width: 100%;
   max-height: 400px;
@@ -212,7 +213,6 @@ section {
   object-fit: cover;
   border-radius: 20px;
 }
-
 .zoom-modal-content img:hover {
   width: 100%;
   max-height: 400px;
@@ -220,7 +220,6 @@ section {
   object-fit: cover;
   border-radius: 20px;
 }
-
 .zoom-modal-content p {
   margin-top: 15px;
   font-size: 1.6em;
@@ -228,7 +227,6 @@ section {
   text-transform: uppercase;
   color: #ffe224;
 }
-
 .close {
   color: #ffe224;
   background-color: none;
@@ -239,7 +237,6 @@ section {
   margin-top: 20px;
   cursor: pointer;
 }
-
 .close:hover {
   color: #ff2424;
   background-color: none;
@@ -250,7 +247,6 @@ section {
   margin-top: 20px;
   cursor: pointer;
 }
-
 .close-btn {
   color: #ffe224;
   background: none;
@@ -265,7 +261,6 @@ section {
   padding: 20px;
   cursor: pointer;
 }
-
 .close-btn:hover {
   color: #000000;
   background: #ffe224;
@@ -468,7 +463,6 @@ h2 {
   transition: 0.5s ease;
   text-align: center;
 }
-
 .dropdown-menu a:hover {
   background-color: #e0b62db7;
   color: #ffffff;
@@ -482,18 +476,7 @@ body {
   overflow-y: auto;
 }
 
-/* Animação opcional do texto da barra */
-@keyframes trocaCor2 {
-  0% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.2);
-  }
-  100% {
-    filter: brightness(1);
-  }
-}
+
 
 /* Animação */
 @keyframes fadeDown {
@@ -684,7 +667,7 @@ p {
   color: rgb(0, 0, 0);
   margin-bottom: 45px;
   text-transform: uppercase;
-  font-size: 2.6svh;
+  font-size: 4.6svh;
 }
 
 .introducaoTemporada {
@@ -697,10 +680,6 @@ p {
   text-align: center;
 }
 
-.resumo {
-  color: #000000;
-  text-align: justify;
-}
 
 /* ===== Intro inicial ===== */
 .intro {
