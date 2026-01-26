@@ -20,9 +20,9 @@ a:hover {
 #escudo {
   position: fixed;
   padding: 10px;
-  margin-left: 20px;
+  width: 140px;
+  margin-top: -20px;
   transition: 1.3s;
-  width: 100px;
   z-index: 8888;
 }
 
