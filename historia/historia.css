@@ -320,21 +320,20 @@ body {
 .paragrafos-fund {
   font-size: 20px;
   text-align: justify;
-  padding: 5px;
-  border: 2px solid black;
-  border-radius: 5px;
+  /* gap: 20px; */
   font-family: "Montserrat", sans-serif;
 }
 
 .itens-fund {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 350px;
   flex-direction: column;
 }
 .títulotext-fund {
-  background-color: black;
-  color: #ffe224;
+  /* background-color: black; */
+  color: black;
   border-radius: 5px;
   text-align: center;
   padding: 5px;
