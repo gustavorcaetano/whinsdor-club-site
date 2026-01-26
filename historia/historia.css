@@ -578,6 +578,11 @@ body {
   color: rgb(96, 75, 0);
 }
 
+.club-text {
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+}
+
 #resumofund {
   font-family: "Montserrat";
   text-align: justify;
