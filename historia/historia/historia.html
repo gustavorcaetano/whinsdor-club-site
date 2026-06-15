@@ -14,13 +14,16 @@
 
 <body>
 
-    <!-- Escudo do Clube -->
-    <a href="../../docs/home.html">
-        <img src="../../imagens/WhinsdorClubEscudo5.png" alt="Escudo do Clube" id="escudo">
-    </a>
-
+    
     <!-- Barra de navegação -->
     <nav class="barranavegacao">
+        <!-- Escudo do Clube -->
+         <a href="../../docs/home.html" class="escudo-selo">
+        <img src="../../imagens/WhinsdorClubEscudo5.png" id="escudo" alt="Escudo do Clube" />
+        </a>
+        
+        <!-- <button class="menu-hamburguer" aria-label="Abrir menu">☰</button> -->
+
         <ul>
             <li class="dropdown">
                 <a href="#">HISTÓRIA</a>
@@ -62,6 +65,7 @@
 
         <img src="../../imagens/login-avatar.png" id="fotoperfil" alt="Foto de Perfil" />
     </nav>
+    
 
     <div class="div-elenco">
         <h1 id="titulo-historia">Whinsdor<span class="club-text">Club</span></h1>
@@ -426,15 +430,12 @@
     </section>
 
     <div id="zoomModal" class="zoom-modal">
-        <div class="zoom-modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            </br></br></br></br>
-            <img id="zoomImg" src="" alt="">
-            <p id="zoomText"></p>
-            <button class="close-btn" onclick="closeModal()">Fechar</button>
-            </br></br></br></br>
-        </div>
-        </br></br></br></br></br></br></br></br>
+    <div class="zoom-modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="zoomImg" src="" alt="Imagem do Modal">
+        <div id="zoomText"></div>
+        <button class="close-btn" onclick="closeModal()">Fechar</button>
+    </div>
     </div>
 
     <!-- Container da transição -->

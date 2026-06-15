@@ -124,3 +124,8 @@ function goToPage(event, url) {
     window.location.href = url;
   }, 2700);
 }
+
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});

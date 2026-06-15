@@ -342,22 +342,22 @@ body {
   transition: 0.5s ease;
 }
 
+/* No desktop, o link do escudo se comporta normalmente */
+.escudo-selo {
+  display: block;
+  width: 100px; /* Tamanho do escudo no PC */
+  height: auto;
+}
+
 #escudo {
-  position: absolute;
-  position: fixed;
-  margin-left: 20px;
-  transition: 1.3s;
-  width: 100px;
-  z-index: 8888;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 #escudo:hover {
-  position: absolute;
-  position: fixed;
-  margin-left: 20px;
-  transition: 1.3s;
-  width: 100px;
-  z-index: 8888;
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -388,20 +388,20 @@ h2 {
 
 .barranavegacao {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   /* permite quebrar linha se o conteúdo for muito largo */
   gap: 40px;
   position: fixed;
-  top: 0;
+  top:  0;
   left: 0;
   width: 100%;
   height: auto;
   /* altura se adapta se os itens quebrarem linha */
   background-color: #ffe224;
   color: black;
-  padding: 30px 40px;
+  padding: 5px 40px;
   /* usa padding lateral em vez de margin negativa */
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -679,6 +679,355 @@ p {
 .introducaoTimeline {
   text-align: center;
 }
+
+
+
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS PARA DESKTOP (Adicione fora do @media se não existirem)
+   ========================================================================== */
+.menu-hamburguer {
+  display: none; /* Escondido por padrão no PC */
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ==========================================================================
+   CÓDIGO DE RESPONSIVIDADE (SÓ INTERFERE EM TELAS DE ATÉ 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Reset de segurança para evitar rolagens laterais bizarras */
+  body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px; /* Aumentado um pouco para compensar o escudo pendurado */
+    background-color: #ffe224;
+  }
+  /* Esconde o menu original e mostra o botão */
+  .menu-toggle { display: block; background: none; border: none; font-size: 30px; cursor: pointer; }
+  .nav-links { display: none; flex-direction: column; width: 100%; text-align: center; }
+  .nav-links.active { display: flex; } /* Classe que o JS vai ativar */
+
+  /* Ajusta o posicionamento */
+  .barranavegacao { flex-direction: column; padding: 20px; }
+
+  /* 2. Ajuste do Escudo e Barra de Navegação */
+  /* 6. O Escudo funcionando como o Selo do Envelope */
+ /* 5. O Escudo como o Selo/Lacre do Envelope */
+  .escudo-selo {
+    position: absolute !important;
+    /* Aumentamos para 70px. Metade é 35px, então usamos -35px para centralizar na borda */
+    bottom: -35px !important; 
+    left: 50% !important;
+    transform: translateX(-50%) !important; 
+    
+    /* Tamanho maior */
+    width: 70px !important;
+    height: 70px !important;
+    
+
+    padding: 1px !important; /* Um pouco mais de respiro interno */
+
+    z-index: 10001 !important;
+    display: block !important;
+    background-image: url('../../imagens/WhinsdorClubEscudo.png');
+
+  }
+
+  #escudo {
+   position: static !important; /* Remove o absolute */
+    width: 65px !important;      /* Aumenta o tamanho */
+    height: auto !important;
+    margin: 0 !important;
+    order: -1;                   /* Opcional: força o escudo a ser o primeiro da lista */
+  }
+  
+
+  .barranavegacao {
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    padding: 45px 10px 25px 10px; /* Mais padding embaixo para dar espaço antes da linha de sombra */
+    height: auto;
+    /* padding: 110px 10px 20px 10px; Abre espaço no topo para o escudo */
+    gap: 15px;
+    /* height: 70px; */
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+
+    /* Propriedades para fixar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000; /* Valor alto para garantir que fique acima de imagens e da timeline */
+    background-color: #ffe224; /* Mantém o fundo sólido para não sobrepor textos com transparência */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve opcional para dar profundidade ao rolar */
+  }
+  #fotoperfil {
+    display: none !important;
+  }
+  /* Centraliza a lista de links abaixo do escudo */
+  .barranavegacao ul {
+    display: flex !important;
+    flex-direction: row !important; /* Links continuam lado a lado na horizontal */
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .barranavegacao ul li a {
+    font-size: 11px !important; /* Ajuste para não quebrar linha em celulares pequenos */
+    text-transform: uppercase !important;
+
+    word-spacing: normal !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+
+  /* 5. Organização das Escritas (Links) */
+  .nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 15px !important; /* Espaço controlado entre as palavras */
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    position: static !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Classe controlada pelo JavaScript para mostrar o menu */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-links li a {
+    font-size: 12px !important; /* Tamanho ideal para não estourar telas pequenas */
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: black !important;
+    text-decoration: none !important;
+    letter-spacing: 0.5px !important;
+    word-spacing: normal !important; /* Reseta espaçamentos gigantes do desktop */
+  }
+  
+
+  .barranavegacao ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 140px;
+  }
+
+  #fotoperfil {
+    margin-top: 10px;
+  }
+
+  /* 3. Correção do Cabeçalho e do Leão (Removendo os Absolutes destrutivos) */
+  .div-elenco {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+  }
+
+  /* --- 2. CABEÇALHO (WHINSDOR CLUB) --- */
+  #titulo-historia {
+    position: relative;
+    margin-top: 120px; /* Dá espaço para a navbar fixa */
+    font-size: 12vw;
+    text-align: center;
+    letter-spacing: -2px;
+    width: 100%;
+    left: 0;
+  }
+  /* Força o "CLUB" a quebrar para a linha de baixo perfeitamente */
+  #titulo-historia span, 
+  #titulo-historia .club-text {
+    display: block;
+  }
+  #titulo-historia .club-text {
+    display: block; /* Força a quebra de linha */
+    margin-top: 5px;
+  }
+
+  #fotoleao {
+    position: relative;
+    margin: 20px auto;
+    left: 0;
+    display: block;
+    width: 120px;
+  }
+
+  #subtitulo-historia {
+    position: relative;
+    margin: 20px auto;
+    left: 0;
+    text-align: center;
+    font-size: 4.5vw;
+    width: 100%;
+  }
+
+  /* 4. Resumo da História Principal */
+  #resumohistoria {
+    position: relative;
+    margin: 20px;
+    padding: 0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    word-spacing: normal;
+  }
+
+  /* 5. Seção da Linha do Tempo */
+  #linhadotempo {
+    padding-top: 40px;
+  }
+
+  .titulosOrigem {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  #titulo-origem, 
+  #titulo-origem2 {
+    font-size: 7svh;
+    margin-top: 0;
+  }
+
+  /* Transforma a Timeline em uma linha lateral esquerda (Padrão Mobile) */
+  /* Alinhando a linha preta à esquerda e deixando mais fina */
+    /* Remove COMPLETAMENTE a linha preta vertical no mobile */
+  .timeline-line {
+    display: none !important;
+  }
+
+    .timeline-dot {
+    display: none !important;
+  }
+
+    /* Transforma cada bloco em uma seção vertical de largura total */
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+    padding: 0;
+    width: calc(100% - 40px);
+  }
+
+  /* Container do Título e Ano */
+  .timeline-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .timeline-left h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .timeline-left h4 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+    /* Container do Texto do Resumo e Imagem */
+  .timeline-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* Ajuste do parágrafo de resumo para ocupar a tela inteira */
+  .timeline-right .resumo {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0; /* Remove a margem direita gigantesca do desktop */
+    color: #111;
+  }
+
+  /* Expande as imagens no mobile para melhor visualização */
+  .timeline-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* 6. Ajustes do Modal de Zoom para Celular */
+  .zoom-modal-content {
+    width: 95%;
+    height: auto;
+    max-height: 85vh;
+    padding: 15px;
+    margin-top: 5vh;
+  }
+
+  .zoom-modal-content p {
+    font-size: 14px;
+  }
+
+  .close {
+    font-size: 40px;
+  }
+
+  .close-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  /* 7. Ajuste dos Textos de Introdução de Páginas (se houver) */
+  #textos-fund {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+
+
+
+
 
 
 /* ===== Intro inicial ===== */
