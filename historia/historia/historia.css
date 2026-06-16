@@ -725,17 +725,13 @@ p {
   .escudo-selo {
     position: absolute !important;
     /* Aumentamos para 70px. Metade é 35px, então usamos -35px para centralizar na borda */
-    bottom: -35px !important; 
+    bottom: -45px !important; 
     left: 50% !important;
     transform: translateX(-50%) !important; 
-    
     /* Tamanho maior */
     width: 70px !important;
     height: 70px !important;
-    
-
     padding: 1px !important; /* Um pouco mais de respiro interno */
-
     z-index: 10001 !important;
     display: block !important;
     background-image: url('../../imagens/WhinsdorClubEscudo.png');
@@ -850,6 +846,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
     min-width: 140px;
+    z-index: 1002 !important;
   }
 
   #fotoperfil {
@@ -994,22 +991,60 @@ p {
     border-radius: 12px;
   }
 
-  /* 6. Ajustes do Modal de Zoom para Celular */
+  /* ==========================================================================
+     AJUSTE DE TAMANHO DO MODAL (MOBILE)
+     ========================================================================== */
+  
+  .zoom-modal {
+    z-index: 100000 !important; /* Joga o modal para a frente de absolutamente tudo */
+    padding: 20px 10px !important; /* Evita que o modal cole no topo ou na base do celular */
+    box-sizing: border-box !important;
+    display: none; /* Mantém o padrão controlado pelo JS */
+  }
+
   .zoom-modal-content {
-    width: 95%;
-    height: auto;
-    max-height: 85vh;
-    padding: 15px;
-    margin-top: 5vh;
+    width: 92% !important;        /* Força uma margem de respiro nas laterais */
+    max-width: 450px !important;   /* Limita a largura para não esticar demais */
+    
+    /* Configurações cruciais de altura: */
+    height: auto !important;       /* Deixa a altura flexível baseada no conteúdo */
+    max-height: 80vh !important;   /* Limita o tamanho a 80% da altura da tela do celular */
+    
+    /* Ativa a rolagem interna para o texto longo não vazar */
+    overflow-y: auto !important;   
+    
+    margin: auto !important;       /* Centraliza o card perfeitamente na tela */
+    padding: 20px !important;      /* Espaço interno para o texto não colar nas bordas amarelas */
+    border: 2px solid #ffe224 !important;
+    box-sizing: border-box !important;
   }
 
+  /* Ajuste da imagem dentro do modal para celulares */
+  .zoom-modal-content img {
+    width: 100% !important;
+    max-height: 200px !important; /* Diminui a imagem no mobile para sobrar espaço para o texto */
+    object-fit: cover !important;
+    border-radius: 12px !important;
+  }
+
+  /* Ajuste do texto do parágrafo */
   .zoom-modal-content p {
-    font-size: 14px;
+    font-size: 16px !important;   /* Tamanho confortável para leitura em telas pequenas */
+    line-height: 1.5 !important;
+    margin-top: 15px !important;
+    padding-bottom: 20px !important; /* Espaço extra no fim do texto para o scroll não cortar */
   }
 
+  /* Redução do botão de fechar (X) que estava gigante */
   .close {
-    font-size: 40px;
+    font-size: 32px !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 15px !important;
+    margin-top: 0 !important;
+    line-height: 1 !important;
   }
+
 
   .close-btn {
     font-size: 14px;
