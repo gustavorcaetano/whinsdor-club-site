@@ -634,16 +634,18 @@ body {
     overflow: visible !important; /* ESSENCIAL: Permite que o escudo saia para fora da barra */
   }
 
-  /* O Segredo do Selo: Posicionamento Absoluto */
+  /* Reduzimos ligeiramente o z-index do escudo para ele aceitar ser sobreposto */
   .escudo-selo {
     position: absolute !important;
-    top: 50px !important; /* Empurra o escudo para baixo, cruzando a linha da barra */
+    top: 50px !important; 
     left: 50% !important;
-    transform: translateX(-50%) !important; /* Centraliza perfeitamente na tela */
-    width: 95px !important; /* Tamanho do seu escudo/selo */
+    transform: translateX(-50%) !important; 
+    width: 95px !important; 
     height: auto !important;
     display: block !important;
-    z-index: 999999 !important; /* Garante que fique por cima de tudo */
+    
+    /* Alterado: Alto o suficiente para a página, mas menor que os links */
+    z-index: 99999 !important; 
   }
 
   /* Escudo renderiza completo dentro do container livre */
@@ -672,8 +674,11 @@ body {
     margin: 0 !important;
     background-color: transparent !important; 
     border-radius: 0 !important;
+    
+    /* Adicionado: Garante que a estrutura dos links fique acima do escudo */
+    position: relative !important;
+    z-index: 1000000 !important; /* Um nível acima do escudo */
   }
-
   .barranavegacao ul li a {
     font-size: 11px !important; 
     letter-spacing: 0.5px !important;
@@ -685,12 +690,17 @@ body {
     display: none !important; /* Esconde o avatar no mobile para manter os links na mesma linha */
   }
 
+  /* O Container do Dropdown em si */
   .dropdown-menu {
+    position: absolute !important;
     top: 100% !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     background-color: #0b1d52 !important;
     border-bottom: solid 2px #ffe224 !important;
+    
+    /* Adicionado/Garantido: Força o dropdown a vencer o escudo */
+    z-index: 1000001 !important; 
   }
 
   /* ==========================================================================
