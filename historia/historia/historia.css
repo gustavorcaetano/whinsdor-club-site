@@ -722,20 +722,18 @@ p {
   /* 2. Ajuste do Escudo e Barra de Navegação */
   /* 6. O Escudo funcionando como o Selo do Envelope */
  /* 5. O Escudo como o Selo/Lacre do Envelope */
+  /* Reduzimos ligeiramente o z-index do escudo para ele aceitar ser sobreposto */
   .escudo-selo {
     position: absolute !important;
-    /* Aumentamos para 70px. Metade é 35px, então usamos -35px para centralizar na borda */
-    bottom: -45px !important; 
+    top: 65px !important; 
     left: 50% !important;
     transform: translateX(-50%) !important; 
-    /* Tamanho maior */
-    width: 70px !important;
-    height: 70px !important;
-    padding: 1px !important; /* Um pouco mais de respiro interno */
-    z-index: 10001 !important;
+    width: 95px !important; 
+    height: auto !important;
     display: block !important;
-    background-image: url('../../imagens/WhinsdorClubEscudo.png');
-
+    
+    /* Alterado: Alto o suficiente para a página, mas menor que os links */
+    z-index: 99999 !important; 
   }
 
   #escudo {
@@ -777,13 +775,19 @@ p {
   /* Centraliza a lista de links abaixo do escudo */
   .barranavegacao ul {
     display: flex !important;
-    flex-direction: row !important; /* Links continuam lado a lado na horizontal */
+    flex-direction: row !important; 
     justify-content: center !important;
     align-items: center !important;
     gap: 14px !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
+    background-color: transparent !important; 
+    border-radius: 0 !important;
+    
+    /* Adicionado: Garante que a estrutura dos links fique acima do escudo */
+    position: relative !important;
+    z-index: 1000000 !important; /* Um nível acima do escudo */
   }
 
   .barranavegacao ul li a {
@@ -842,11 +846,15 @@ p {
   }
 
   .dropdown-menu {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 140px;
-    z-index: 1002 !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background-color: #ffe224 !important;
+    border-bottom: solid 2px #958206 !important;
+    
+    /* Adicionado/Garantido: Força o dropdown a vencer o escudo */
+    z-index: 1000001 !important; 
   }
 
   #fotoperfil {
