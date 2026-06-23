@@ -51,13 +51,19 @@
     box-sizing: border-box !important;
   }
 
-  /* Container do Escudo no Mobile */
-    .escudo-selo {
-    display: block;
-    width: 100px; /* Tamanho do escudo no PC */
-    height: auto;
-    margin: 0 auto;
-    }
+  /* Reduzimos ligeiramente o z-index do escudo para ele aceitar ser sobreposto */
+  .escudo-selo {
+    position: absolute !important;
+    top: 50px !important; 
+    left: 50% !important;
+    transform: translateX(-50%) !important; 
+    width: 95px !important; 
+    height: auto !important;
+    display: block !important;
+    
+    /* Alterado: Alto o suficiente para a página, mas menor que os links */
+    z-index: 99999 !important; 
+  }
 
   /* Imagem do Escudo no Mobile */
   #escudo {
@@ -68,17 +74,21 @@
     margin: 0 !important;
   }
 
-  /* Alinhamento dos Links abaixo do escudo */
   .barranavegacao ul {
     display: flex !important;
-    flex-direction: row !important; /* Links lado a lado horizontalmente */
+    flex-direction: row !important; 
     justify-content: center !important;
     align-items: center !important;
     gap: 14px !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
-    list-style: none !important;
+    background-color: transparent !important; 
+    border-radius: 0 !important;
+    
+    /* Adicionado: Garante que a estrutura dos links fique acima do escudo */
+    position: relative !important;
+    z-index: 1000000 !important; /* Um nível acima do escudo */
   }
 
   .barranavegacao ul li a {
@@ -94,14 +104,16 @@
     display: none !important; /* Oculta o avatar para limpar espaço */
   }
 
-  /* Dropdown no Mobile */
   .dropdown-menu {
     position: absolute !important;
     top: 100% !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    min-width: 130px !important;
     background-color: #ffe224 !important;
+    border-bottom: solid 2px #c5ac09 !important;
+    
+    /* Adicionado/Garantido: Força o dropdown a vencer o escudo */
+    z-index: 1000001 !important; 
   }
 
   /* ==========================================================================
