@@ -59,29 +59,49 @@ window.addEventListener("DOMContentLoaded", () => {
 // ===============================
 // Dropdown (menus suspensos)
 // ===============================
+// ==========================================================================
+// DROPDOWN DE NAVEGAÇÃO INTERATIVA (MUITO IMPORTANTE PARA MOBILE)
+// ==========================================================================
 document.addEventListener("DOMContentLoaded", () => {
   const dropdowns = document.querySelectorAll(".dropdown");
 
   dropdowns.forEach(dropdown => {
-    const toggle = dropdown.querySelector(".dropdown-toggle");
+    // Captura o link principal <a> de dentro da li.dropdown (HISTÓRIA, ELENCO, etc.)
+    const toggle = dropdown.querySelector("a");
 
-    toggle.addEventListener("click", e => {
-      e.preventDefault();
+    if (toggle) {
+      toggle.addEventListener("click", e => {
+        // Aplica o comportamento de clique apenas se estiver em telas mobile/tablet
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          e.stopPropagation();
 
-      // Fecha outros menus
-      dropdowns.forEach(d => {
-        if (d !== dropdown) d.classList.remove("active");
+          // Fecha todos os outros dropdowns abertos antes de alternar o atual
+          dropdowns.forEach(d => {
+            if (d !== dropdown) {
+              const menu = d.querySelector(".dropdown-menu");
+              if (menu) menu.style.display = "none";
+            }
+          });
+
+          // Alterna o estado de exibição do menu atual
+          const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+          if (dropdownMenu) {
+            const isVisible = dropdownMenu.style.display === "block";
+            dropdownMenu.style.display = isVisible ? "none" : "block";
+          }
+        }
       });
-
-      // Alterna visibilidade
-      dropdown.classList.toggle("active");
-    });
+    }
   });
 
-  // Fecha se clicar fora
-  document.addEventListener("click", e => {
-    if (!e.target.closest(".dropdown")) {
-      dropdowns.forEach(d => d.classList.remove("active"));
+  // Fecha qualquer menu dropdown aberto se o usuário tocar fora da navbar
+  document.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      dropdowns.forEach(d => {
+        const menu = d.querySelector(".dropdown-menu");
+        if (menu) menu.style.display = "none";
+      });
     }
   });
 });

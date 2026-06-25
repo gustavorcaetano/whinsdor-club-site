@@ -288,86 +288,119 @@ body {
 }
 
 /* RESPONSIVIDADE */
+/* ==========================================================================
+   CONFIGURAÇÕES APENAS PARA DISPOSITIVOS MÓVEIS (MOBILE & TABLET)
+   ========================================================================== */
 
-/* Telas menores que 1024px */
-@media (max-width: 1024px) {
-  #titulo-home {
-    font-size: 14vw;
-    margin-top: 30vh;
-  }
-
-  #subtitulo-home {
-    font-size: 6vw;
-  }
-
-  .barranavegacao {
-    font-size: 2.5vw;
-    gap: 30px;
-  }
+@media screen and (max-width: 768px) {
   body {
-    overflow: hidden;
-  }
-}
-
-/* Telas menores que 768px (tablets/celulares grandes) */
-@media (max-width: 768px) {
-  #titulo-home {
-    font-size: 17vw;
-    margin-top: 32vh;
+    padding-top: 130px !important; /* Espaço para a barra mobile não cobrir o título */
+    overflow-y: auto !important;   /* Força a liberação da rolagem vertical se necessário */
+    overflow-x: hidden !important; /* Evita quebras e rolagem horizontal estranha */
   }
 
-  #subtitulo-home {
-    font-size: 6.5vw;
-  }
-
+  /* Transformação da Navbar para Mobile */
   .barranavegacao {
-    flex-direction: column;
-    font-size: 4vw;
-    gap: 10px;
-    padding: 10px;
+    justify-content: center !important;
+    padding: 15px 10px 0px 10px !important;
+    height: 90px !important;
+    background-color: #0b1d52 !important; /* Garante o fundo azul padrão do clube */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    word-spacing: normal !important; /* Remove o espaçamento de palavras do PC */
   }
 
-  #escudo {
-    width: 12vw;
+  /* Alinhamento dos links horizontais */
+  .barranavegacao ul {
+    gap: 15px !important;
+    width: 100% !important;
+    justify-content: center !important;
+    position: relative !important;
+    z-index: 1000000 !important; /* Garante que a lista fique estruturalmente acima do escudo */
   }
 
+  .barranavegacao ul li a {
+    font-size: 11px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  /* Esconde a foto de perfil no mobile para focar na navegação */
   #fotoperfil {
-    width: 35px;
+    display: none !important;
   }
-}
-body {
-  overflow: hidden;
-}
 
-/* Celulares pequenos */
-@media (max-width: 480px) {
+  /* O Efeito Selo de Carta Aplicado ao Escudo Solto */
+  #escudo {
+    position: fixed !important;
+    top: 55px !important; /* Desce exatamente para cruzar a borda inferior da navbar */
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* Centraliza horizontalmente na viewport */
+    width: 85px !important; /* Tamanho proporcional do selo */
+    height: auto !important;
+    z-index: 99999 !important; /* Camada abaixo do dropdown aberto, mas acima do conteúdo */
+  }
+  
+  #escudo:hover {
+    transform: translateX(-50%) scale(1.02) !important;
+  }
+
+  /* Dropdown Mobile Corrigido (Sobrepondo o Escudo) */
+  .dropdown-menu {
+    background-color: #040b30 !important; /* Tom escuro para melhor contraste */
+    z-index: 1000001 !important; /* Camada máxima para passar por cima do z-index do escudo */
+    width: 150px !important;
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: none; /* Deixa o controle de exibição exclusivo para o JavaScript no toque */
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none !important; /* Desativa o hover no mobile para não bugar ao tocar */
+  }
+
+  /* Ajustes de Escala dos Textos Principais da Home */
   #titulo-home {
-    font-size: 12vw;
-    margin-top: 35vh;
+    font-size: 14vw !important;
+    margin-top: 25vh !important;
   }
 
   #subtitulo-home {
-    font-size: 7.5vw;
+    font-size: 6.5vw !important;
+    margin-top: 0vh !important;
   }
 
-  .barranavegacao {
-    font-size: 5vw;
-  }
-
+  /* Rodapé Responsivo */
   .faixa-final {
-    font-size: 12px;
+    font-size: 11px !important;
+    padding: 12px 10px !important;
+  }
+}
+
+/* Ajustes finos para telas de celulares muito pequenos (telas até 480px) */
+@media screen and (max-width: 480px) {
+  .barranavegacao ul {
+    gap: 10px !important;
+  }
+
+  .barranavegacao ul li a {
+    font-size: 10px !important;
   }
 
   #escudo {
-    width: 15vw;
+    width: 75px !important;
+    top: 60px !important;
   }
 
-  #fotoperfil {
-    width: 30px;
+  #titulo-home {
+    font-size: 15vw !important;
   }
 
-  body {
-    overflow: hidden;
+  #subtitulo-home {
+    font-size: 7.5vw !important;
   }
 }
 
